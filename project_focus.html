@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device=width, intitial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> CSS Layouts</title>
+        <link rel = "stylesheet" href = "main.css">
+        <link rel="stylesheet" href="https://use.typekit.net/srk5tly.css">
+        <script type="text/javascript" src="java.js"></script>
+    </head>
+    <body>       
+        <script>
+            document.body.className = 'fade';
+        </script>
+        <div class='nav-container wrapper'>
+            <div class="navbar">
+                <div class="logo"> <a href="index.html">Joseph</a></div>
+
+
+                <input type='checkbox' id="navmenu">
+                <div class="links-container">
+                    <div class="links">
+                            <a href="photo.html">Photo</a>
+                            <a href="about.html">About</a>
+                        </div>
+                </div>
+                <div for="navmenu" class='hamburger-container'>
+                    <label for='navmenu' class='hamburger' onclick="myFunction(this)">
+                        <div class='bar1'></div>
+                        <div class='bar2'></div>
+                        <div class='bar3'></div>
+                    </label>
+                </div>
+            </div> 
+        </div>
+
+        <!------BEGIN CONTENT----->
+                <div class="parallax-focus text-wrap"></div>
+                <div class='white-container'>
+                    <div class='text-wrap'>
+                        <div class = 'left'><h3>Focus App</h3></div>
+                        <p>UIUX - Personal Project 2019<br><br>
+                        Collaborators: Individual <br>
+                        Duration: 3 Weeks<br>
+                        Skills: UI/UX, Wire-framing, User Research, Visual Branding</p>
+                    </div>
+                </div>
+
+
+                <div class='gray-container'>
+                    <div class='text-wrap'>
+                        <h4 class='left'>01 Overview</h4>
+                        <div class='right'>
+                            <h5>Problem</h5>
+                            <p>As students, we overwhelm ourselves with distractions in the study environment. This comes in the form of friends, environmental sounds, visuals diversions, and our phones. Some of these are quite realistically inevitable while others are very manageable. </p> <br><br>
+                            <h5>Solution</h5>
+                            <p>Remove the temptation of digital distractions through an app-based interval-style study option and the disabling of the mobile interface. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='white-container'>
+                    <div class='text-wrap'>
+                        <h4 class='left'>02 Problem Space</h4>
+                        <div class='right'>
+                            <p>In today's educational environment, it has become almost impossible to work effectively without electronic devices. The use of laptops has maximized workflow efficiency for any subject and type of study. However, the advances in networked communication and design have introduced to students non-study-related apps that are incredible― but extremely distracting. These apps come from multibillion dollar companies such as Facebook + Instagram, Snapchat and Twitter.</p>
+                        </div>
+                    </div>
+                    <img style='margin-bottom: 117px;' class='image-container' src="images/project_focus/logos.png">
+                    <div class='text-wrap'>
+                        <div class='right'>
+                            <h5>The solution cannot be to simply remove phones in the workspace because:</h5>
+                            <p>-Most students don't see the worth or don't have the willpower to do so. <br>
+                                -Whether or not the phone is present or not is out of my control as the designer. <br> <br></p>
+                            </p><br>
+                            <h5>Conclusion</h5>
+                            <p>While the presence of phones in any given individual's study space cannot be regulated, the limitations of what they can do with the device can be.</p>
+                        </div>
+                    </div>
+                </div>
+
+                    
+                <div class='gray-container'>
+                    <div class='text-wrap'>
+                        <h4>03 Archetypes</h4>
+                        <p>I developed personas to categorize three main users; this app attempts to address as many user types as possible. The purpose of this was to understand the unique problems present and how to create an all-encompassing solution that universally impacts.</p>
+                    </div>
+                    <img class='image-container' src="images/project_focus/archetypes_gray.jpg">
+                </div>
+
+                    
+                <div class='white-container'>
+                    <div class='text-wrap'>
+                                <h4>04 Data Collection</h4>
+                                <div class='right'>
+                                <p>To understand if what I attempted to address was truly a problem or not, I began to: <br> <br>
+                                1) Find existing research done on digital consumption among college students.
+                                Ever since social media took over the internet, there has been controversy regarding its impact on teens and whether it's a step forward for society or a step back. </p>
+                            </div>
+                    </div>
+                    <img style = 'margin-bottom:117px' class='image-container' src="images/project_focus/survey_quotes.jpg">
+                    <div class='text-wrap'>   
+                        <p class='right'>2) Survey people regarding their phone + study habits. 
+                        With research already done by professional researchers and educational institutions, I wanted to find my own evidence; I sent out the survey question: </p><br><br>
+                    </div>
+                    <img class= 'image-container' src="images/project_focus/research_survey.jpg"> <br>
+                </div>
+
+                <div class='gray-container'>
+                    <div class='text-wrap'>         
+                        <h4>05 Envisioned Functionalities / Solution</h4>
+                        <div class='right'>
+                            <p>For this app, I wanted to implement three main functions:</p><br><br>
+                            <h5>Singular Timer</h5>
+                            <p>For short term study sessions, the singular timer implements a one-time alarm that counts down until it hits 00:00, notifying the user that their study session is momentarily finished. This function mimics existing timer apps and exists for convenient use.</p><br><br>
+                            <h5>Interval Timer</h5>
+                            <p>For long-term studying, the interval timer implements a function that allows students to preset a series of timers and breaks before studying. Doing so sets a rigid study regime and negates any chances of distractions that might emerge in the manual in-between process of setting follow-up timers.</p><br><br>
+                            <h5>Phone Lockdown</h5>
+                            <p>While the timer is running, the user cannot access his/her phone besides the lock screen. The only way to unlock your phone would be to disable the timer, but doing so would defeat the purpose of using the app in the first place.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class='white-container'>
+                        <div class='text-wrap'>
+                            <h4>07 Visual Identity</h4>
+                            <p>Rather than use Apple's iOS Human Interface and Google's Material Design, I wanted to brand the app to appear and feel different. This led to changes a few intentional design decisions.</p><br><br>
+                        </div>
+                        <img class='image-container' src="images/project_focus/branding.jpg"> 
+                    </div>
+    
+                <div class='gray-container'>
+                    <div class='text-wrap'>
+                        <h4>06 Wireframing and Prototyping</h4>
+                        <p>Upon finishing research, I began sketching with pen and paper, eventually developing a more refined and accurate digital wireframe. One thing I kept in mind was the importance of minimalism and simplicity. I wanted to make sure that the user would have no confusion figuring out what's meant to be informative/visual and what's meant to be interactive.</p><br><br>
+                    </div>
+
+                    <img class='image-container' src="images/project_focus/rapid-wireframev2.png"> <br>
+                </div>
+
+
+                <div class='white-container'>
+                    <div class='text-wrap'>
+                        <h4>08 High Fidelity Design</h4>
+                        <p>After collecting research data, experimenting with wireframing, and defining a visual identity, I developed the final design shown below.</p><br>
+                    </div>
+                        <img class = 'image-container' src="images/project_focus/hifi_proto.jpeg"> 
+                       <!--  <img style="width:73%;" src="images/project_focus/appflow.gif">-->
+                </div>
+
+                <div style='padding-bottom:30px; margin-bottom: 0;' class = 'gray-container'>
+                    <img style='margin: 0 auto 117px auto;' class='image-container' src="images/project_focus/reflection.jpg">
+                    <div style='margin-bottom: 200px;' class='text-wrap'>
+                            <h4>09 Reflection</h4>
+                            <p>In conclusion, the entire process of designing this concept app allowed me to exercise a multitude of design practice skills. From data collection to wireframe building, visual graphics, and product presentation, individually embarking on designing an app as simple as "Focus" has taught me the unseen complexity of product design. If I had more time on this project, I would attempt to fully prototype the app and implement transitional animations, enhancing the user's spatial experience and intuition regarding navigational flow.
+                            </p>
+                    </div>
+                    <div style= 'margin-bottom: 0'; class="footer-container wrapper">
+                        <div class="footer">
+                            <div class='resume-container'>
+                                <a class='resume' href="https://drive.google.com/file/d/1Vdz4Nm7x1KBoTJXKGmAl14KRodsHMeJJ/view" target="_blank" >Resumé</a>
+                            </div>
+                            <div class='backup-container'>
+                                <a class='backup' href="">Up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                        document.addEventListener("DOMContentLoaded", function(e) {
+                            document.body.className = '';
+                        });
+                </script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <script src="script/java.js"></script>
+    </body>
+</html>

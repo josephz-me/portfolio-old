@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> CSS Layouts</title>
+        <link rel = "stylesheet" href = "main.css">
+        <link rel="stylesheet" href="https://use.typekit.net/srk5tly.css">
+    </head>
+    <body>
+        <script>
+            document.body.className = 'fade';
+        </script>
+
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <div class='nav-container wrapper'>
+                <div class='navbar'>
+                    <div class='links'>
+                            <a href="javascript:void(0)" onclick="closeNav()">Close</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Overlay content -->
+            <div class="overlay-content links">
+                <a href="about.html">About</a>
+                <a href="https://drive.google.com/file/d/1Vdz4Nm7x1KBoTJXKGmAl14KRodsHMeJJ/view" target="_blank">Resume</a>
+                <p>&mdash;</p>
+                <a href="photo.html">Photo</a>
+
+            </div>
+        </div>
+
+        <div class='nav-container wrapper'>
+            <div class="navbar">
+                <div class="logo"> <a href="index.html">Joseph</a>
+
+                        <!----<span id="typed-strings"></span>
+                        <span id='typed'></span>-->
+                </div>
+ 
+                <input type='checkbox' id="navmenu">
+                <div class="links-container">
+                    <div class="links">
+                            <a href="photo.html">Photo</a>
+                            <a href="about.html">About</a>
+                        </div>
+                </div>
+                <div for="navmenu" class='hamburger-container'>
+                        <p onclick="openNav()" class='links hamburger' href=''>Menu</p>
+                </div>
+            </div> 
+        </div>
+        <div class="main-grid-container wrapper">
+            <div class="item0 hover card" > <a href="project_elevation.html"> <img src="images/project_elevation/elevation_masthead.jpg"> <div class="card-text">Elevation Church Web & App</div></a></div>
+            <div class="item1 hover card" >
+                <a href="project_focus.html"> <img src="images/cover1.jpg"><div class="card-text">Focus Study App</div></a>
+            </div>
+            <div class="item2 hover card ">
+                <a href="project_waste.html"><img src="images/cover2.jpg"><div class="card-text">Pittsburgh Waste Management</div></a> 
+            </div>
+            <div class="item3 hover card">
+                <a href=""><img src="images/cover3.jpg"><div class="card-text">Typography Poster</div></a> 
+            </div>
+            <div class="item4 hover card">
+                <a href="project_lightEngine.html"><img src="images/project_lightEngine/cover_lightEngine.jpg"><div class="card-text">Light Engines</div></a> 
+            </div>
+            <div class="item5 hover card">
+                <a href="project_newTrent.html"><img src="images/project_newtrent/newTrent_cover.jpg"><div class="card-text">New Trent Internship</div></a> 
+            </div>
+        </div>
+        <div class="footer-container wrapper">
+            <div class="footer">
+                <div class='resume-container'>
+                    <a class='resume' href="https://drive.google.com/file/d/1Vdz4Nm7x1KBoTJXKGmAl14KRodsHMeJJ/view" target="_blank" >Resumé</a>
+                </div>
+                <div class='backup-container'>
+                    <a class='backup' href="">Back Up</a>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(e) {
+                document.body.className = '';
+            });
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+        <script src="script/java.js"></script>
+    </body>
+</html>

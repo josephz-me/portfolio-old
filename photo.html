@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device=width, intitial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> CSS Layouts</title>
+        <link rel = "stylesheet" href = "main.css">
+        <link rel="stylesheet" href="https://use.typekit.net/srk5tly.css">
+    </head>
+
+    <body>
+            <script>
+                    document.body.className = 'fade';
+                </script>
+        <div class='nav-container wrapper'>
+            <div class="navbar">
+                <div class="logo"> <a href="index.html">Joseph</a></div>
+
+
+                <input type='checkbox' id="navmenu">
+                <div class="links-container">
+                    <div class="links">
+                            <a href="photo.html">Photo</a>
+                            <a href="about.html">About</a>
+                        </div>
+                </div>
+                <div for="navmenu" class='hamburger-container'>
+                    <label for='navmenu' class='hamburger' onclick="myFunction(this)">
+                        <div class='bar1'></div>
+                        <div class='bar2'></div>
+                        <div class='bar3'></div>
+                    </label>
+                </div>
+            </div> 
+        </div>
+        <div class='white-container'>
+            <div class='text-wrap'>
+                <h3 class='left'>Photography</h3>
+                <div class='right'>
+                    <p>While design fulfills a large portion of my creative drive, I find a joy in photographing meaningful moments.
+                        That's really the only reason why I do it — because I love it.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class='gray-container'>
+            <div class='text-wrap'>
+                <h4 class='left'>Dancer Symposium</h4>
+                <div class='right'>
+                    <p>These are a collection of images taken from Carnegie Mellon's biannual performance Dancer Symposiums Luxe [2018] and Nova [2019].</p>
+                </div>
+            </div>
+            <div class='masonry-container'>
+                <div class="masonry-image"><img src='photography/LG/lg_1.jpg'></div>
+                <div class="masonry-image"><img src='photography/LG/lg_5.jpg'></div>
+                <div class="masonry">
+                    <div class="masonry-image"><img src='photography/LG/lg_3.jpg'></div>
+                    <div class="masonry-image"><img src='photography/LG/lg_4.jpg'></div>     
+                    <div class="masonry-image"><img src='photography/LG/lg_6.jpg'></div>    
+                    <div class="masonry-image"><img src='photography/LG/lg_7.jpg'></div>       
+                    <div class="masonry-image"><img src='photography/LG/lg_8.jpg'></div>
+                    <div class="masonry-image"><img src='photography/LG/lg_9.jpg'></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class='white-container'>
+            <div class='text-wrap'>
+                <h4 class='left'>Dancer Symposium</h4>
+                <div class='right'>
+                    <p>These are a collection of images taken from Carnegie Mellon's biannual performance Dancer Symposiums Luxe [2018] and Nova [2019].</p>
+                </div>
+            </div>
+            <div class='masonry-container'>
+                <div class="masonry-image"><img src='photography/ds-12.jpg'></div>
+                <div class="masonry-image"><img src='photography/ds-10.jpg'></div>
+                <div class="masonry">
+                    <div class="masonry-image"><img src='photography/ds-8.jpg'></div>
+
+                    <div class="masonry-image"><img src='photography/ds-5.jpg'></div>
+                    <div class="masonry-image"><img src='photography/ds-16.jpg'></div>
+                    <div class="masonry-image"><img src='photography/ds-evan.jpg'></div>
+
+                    <div class="masonry-image"><img src='photography/ds-2.jpg'></div>
+
+                    <div class="masonry-image"><img src='photography/ds-ethan.jpg'></div>
+                    <div class="masonry-image"><img src='photography/ds-4.jpg'></div>
+
+                    <div class="masonry-image"><img src='photography/ds-13.jpg'></div>
+                    <div class="masonry-image"><img src='photography/ds-1.jpg'></div>
+                </div>
+            </div>
+        </div>
+
+        <div class='gray-container'>
+                <div class='text-wrap'>
+                    <h4 class='left'>People</h4>
+                    <div class='right'>
+                        <p>These are a collection of images taken from Carnegie Mellon's biannual performance Dancer Symposiums Luxe [2018] and Nova [2019].</p>
+                    </div>
+                </div>
+                <div class='masonry-container'>
+                    <div class="masonry-image"><img src='photography/portraits-0.jpg'></div>
+                    <div class="masonry">
+                        <div class="masonry-image"><img src='photography/portraits-1.jpg'></div>    
+                        <div class="masonry-image"><img src='photography/portraits-2.jpg'></div>
+                        <div class="masonry-image"><img src='photography/portraits-8.jpg'></div>
+                        <div class="masonry-image"><img src='photography/portraits-5.jpg'></div>
+                        <div class="masonry-image"><img src='photography/portraits-4.jpg'></div>
+                        <div class="masonry-image"><img src='photography/portraits-6.jpg'></div>
+      
+                    </div>
+                </div>
+            </div>
+
+        <div class="footer-container wrapper">
+            <div class="footer">
+                <div class='resume-container'>
+                    <a class='resume' href="https://drive.google.com/file/d/1Vdz4Nm7x1KBoTJXKGmAl14KRodsHMeJJ/view" target="_blank" >Resumé</a>
+                </div>
+                <div class='backup-container'>
+                    <a class='backup' href="">Back Up</a>
+                </div>
+            </div>
+        </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(e) {
+            document.body.className = '';
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="script/java.js"></script>
+    </body>
+</html>
