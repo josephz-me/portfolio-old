@@ -691,13 +691,14 @@ h3{
                                 'two';
         grid-gap: 20px;
     }
-  
-    .masthead-container{
-        grid-template-columns: 95%;
-    }
 
     .image-container{
         width:93%;
+    }
+
+    .hero{
+        height: 69vh;
+        object-fit: cover;
     }
 
     .footer-container{
