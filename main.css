@@ -15,7 +15,7 @@
     -webkit-user-drag: none;
     -khtml-user-drag: none;
     -moz-user-drag: none;
-    -o-user-drag: none;
+    -o-user-drag: none; 
 }
 
 html{
@@ -214,22 +214,14 @@ p{
 .nav-container{
     display: grid;
     margin: 0 auto;
-    top: 0;
 }
-
-
 
 .navbar{
     margin: 20px 0;
-    top: 0;
     display: grid;
     grid-auto-flow: column;
     grid-gap: 20px;
 
-}
-
-.navbar a:hover{
-    animation:blinkingText 0.1s infinite;   
 }
 
 .links-container{
@@ -305,7 +297,7 @@ p{
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px; 
-    width: 85%;
+    width: 80%;
 }
 
 .left{
@@ -337,7 +329,7 @@ h3{
 
 .image-container{
     display: grid;
-    width:85%;
+    width:80%;
     margin: 117px auto 0 auto;
 }
 
@@ -502,7 +494,6 @@ h3{
     display: grid;
     margin: 20px auto;
     grid-template-areas: 'resume' 'backup';
-    /*position:sticky;*/
     }
 
 .footer{
@@ -512,20 +503,6 @@ h3{
     font-size: 25px;
     font-weight: 400;
 }
-
-/*
-.footer a{
-    color:#707171;  
-}
-
-.footer a:visited{
-    color:#707171;
-}
-
-.footer a:hover{
-    color: black;
-} 
-*/
 
 .resume-container{
     display: grid;
@@ -591,7 +568,7 @@ h3{
     }
 
     .navbar{
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
         align-content: space-evenly; 
     }
 
