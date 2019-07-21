@@ -39,7 +39,7 @@ body.fade {
 }
 
 .wrapper{
-    width: 85%;
+    width: 96%;
 }
 
 html {
@@ -215,12 +215,15 @@ p{
     top: 0;
 }
 
+
+
 .navbar{
     margin: 30px 0;
     top: 0;
     display: grid;
     grid-auto-flow: column;
     grid-gap: 20px;
+
 }
 
 .navbar a{
@@ -284,17 +287,6 @@ a:active{
 }
 
 /*--------------INDIVIDUAL PROJECT PAGES--------------*/
-.parallax-focus{
-    background-image:url("images/focus-masthead.jpg");
-    min-height: 570px; 
-    
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .parallax-waste{
     background-image:url("images/project_waste/waste-masthead.jpg");
     min-height: 570px; 
@@ -302,17 +294,6 @@ a:active{
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: 50% 35%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.parallax-lightEngine{
-    background-image:url("images/project_lightEngine/lightEngine_masthead.jpg");
-    min-height: 570px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -328,10 +309,16 @@ a:active{
     background-size: cover;
 }
 
-.masthead{
-    width: 1200px;
-} 
 
+
+.hero{
+    display:block;
+    margin: 0 auto;
+    width: 96%; 
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+} 
 
 .text-wrap{
     margin: 0 auto;
@@ -623,7 +610,7 @@ h3{
 
     .navbar{
         grid-template-columns: 1fr;
-        align-content: space-evenly;    
+        align-content: space-evenly; 
     }
 
     .footer-container{
