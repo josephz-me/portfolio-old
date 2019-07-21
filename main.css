@@ -151,7 +151,7 @@ h4{
     color:#444444;
     font-weight: 400;
     font-style: normal;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 h5{
@@ -297,7 +297,7 @@ p{
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px; 
-    width: 80%;
+    width: 85%;
 }
 
 .left{
@@ -329,7 +329,7 @@ h3{
 
 .image-container{
     display: grid;
-    width:80%;
+    width:85%;
     margin: 117px auto 0 auto;
 }
 
