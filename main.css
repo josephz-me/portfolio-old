@@ -13,6 +13,10 @@
     letter-spacing: .1px;
 }
 
+@-ms-viewport{
+    width: device-width;
+  }
+
 html{
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
