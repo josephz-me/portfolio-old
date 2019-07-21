@@ -11,11 +11,13 @@
     font-style: normal;
     /*z-index: 1;*/
     letter-spacing: .1px;
-}
 
-@-ms-viewport{
-    width: device-width;
-  }
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+     user-drag: none;
+}
 
 html{
     text-rendering: optimizeLegibility;
@@ -587,6 +589,19 @@ h3{
         display:block;
         grid-template-columns:1fr;
         width: 85%;
+    }
+
+    .white-container{
+        padding: 70px 0;
+    }
+    
+    .gray-container{
+        padding: 70px 0;
+        background-color:#F9F9F9;
+    }
+
+    .image-container{
+        margin: 70px auto 0 auto;
     }
 
     .right{

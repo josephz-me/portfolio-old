@@ -13,27 +13,45 @@
             <script>
                     document.body.className = 'fade';
                 </script>
-        <div class='nav-container wrapper'>
-            <div class="navbar">
-                <div class="logo"> <a href="index.html">Joseph</a></div>
-
-
-                <input type='checkbox' id="navmenu">
-                <div class="links-container">
-                    <div class="links">
-                            <a href="photo.html">Photo</a>
-                            <a href="about.html">About</a>
+                <div id="myNav" class="overlay">
+                    <!-- Button to close the overlay navigation -->
+                    <div class='nav-container wrapper'>
+                        <div class='navbar'>
+                            <div class='links'>
+                                    <a href="javascript:void(0)" onclick="closeNav()">Close</a>
+                            </div>
                         </div>
+                    </div>
+        
+                    <!-- Overlay content -->
+                    <div class="overlay-content links">
+                        <a href="about.html">About</a>
+                        <a href="https://drive.google.com/file/d/1Vdz4Nm7x1KBoTJXKGmAl14KRodsHMeJJ/view" target="_blank">Resume</a>
+                        <p>&mdash;</p>
+                        <a href="photo.html">Photo</a>
+                    </div>
                 </div>
-                <div for="navmenu" class='hamburger-container'>
-                    <label for='navmenu' class='hamburger' onclick="myFunction(this)">
-                        <div class='bar1'></div>
-                        <div class='bar2'></div>
-                        <div class='bar3'></div>
-                    </label>
+        
+                <div class='nav-container wrapper'>
+                    <div class="navbar">
+                        <div class="logo"> <a href="index.html">Joseph</a>
+        
+                                <!----<span id="typed-strings"></span>
+                                <span id='typed'></span>-->
+                        </div>
+         
+                        <input type='checkbox' id="navmenu">
+                        <div class="links-container">
+                            <div class="links">
+                                    <a href="photo.html">Photo</a>
+                                    <a href="about.html">About</a>
+                                </div>
+                        </div>
+                        <div for="navmenu" class='hamburger-container'>
+                                <p onclick="openNav()" class='links hamburger' href=''>Menu</p>
+                        </div>
+                    </div> 
                 </div>
-            </div> 
-        </div>
         <div class='white-container'>
             <div class='text-wrap'>
                 <h3 class='left'>Photography</h3>
