@@ -16,7 +16,6 @@
     -khtml-user-drag: none;
     -moz-user-drag: none;
     -o-user-drag: none;
-     user-drag: none;
 }
 
 html{
@@ -81,7 +80,7 @@ html {
   
   /* When you mouse over the navigation links, change their color */
   .overlay a:hover, .overlay a:focus {
-    color:#72A1B8;
+    color:black;
   }
 
   .overlay .navbar .links{
@@ -89,7 +88,8 @@ html {
   }
 
 .hamburger-container p:hover{
-    color:#72A1B8;
+    color:black;
+    animation:blinkingText 0.1s infinite;   
 }
 
 
@@ -105,8 +105,27 @@ html {
 
 /*--------------TEXT STYLING--------------*/
 
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    100%{    color: #919090 }
+    0%{     color: #000;    }
+}
+
 a{
-    text-decoration: none;    
+    text-decoration: none;  
+    transition: 0.2s;  
+}
+
+a:visited{
+    color:#707171;
+}
+a:hover{
+    transition: 0.2s;
+    animation:blinkingText 0.1s infinite;  
+}
+
+a:active{
+    color:#707171;
 }
 
 .text-wrap a{
@@ -190,23 +209,6 @@ p{
     cursor: pointer;
 }
 
-/* Rotate first bar */
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) /*translate(-9px, 6px)*/ ;
-    transform: translate(0px, 6px) rotate(-45deg);
-  }
-  
-  /* Fade out the second bar */
-  .change .bar2 {
-    opacity: 0;
-  }
-  
-  /* Rotate last bar */
-  .change .bar3 {
-    -webkit-transform: rotate(45deg) /*translate(-8px, -8px)*/ ;
-    transform: translate(0px, -6px) rotate(45deg);
-  }
-  
 /*--------------NAV BAR--------------*/
 
 .nav-container{
@@ -218,7 +220,7 @@ p{
 
 
 .navbar{
-    margin: 30px 0;
+    margin: 20px 0;
     top: 0;
     display: grid;
     grid-auto-flow: column;
@@ -226,12 +228,8 @@ p{
 
 }
 
-.navbar a{
-    transition: 0.2s;
-}
-
 .navbar a:hover{
-    transition: 0.2s;
+    animation:blinkingText 0.1s infinite;   
 }
 
 .links-container{
@@ -250,7 +248,6 @@ p{
 
 .links a{
     color:#707171;
-    transition: 0.2s;
 }
 
 .logo{
@@ -267,23 +264,6 @@ p{
 
 .logo a:visited{
     color:#444444;
-}
-
-.logo a:hover{
-    color:#72A1B8;
-}
-
-a:visited{
-    color:#707171;
-}
-
-a:hover{
-    color:#72A1B8;
-    transition: 0.2s;
-}
-
-a:active{
-    color:#707171;
 }
 
 /*--------------INDIVIDUAL PROJECT PAGES--------------*/
@@ -520,7 +500,7 @@ h3{
 
 .footer-container{
     display: grid;
-    margin: 30px auto;
+    margin: 20px auto;
     grid-template-areas: 'resume' 'backup';
     /*position:sticky;*/
     }
@@ -533,8 +513,9 @@ h3{
     font-weight: 400;
 }
 
+/*
 .footer a{
-        color:#707171;  
+    color:#707171;  
 }
 
 .footer a:visited{
@@ -542,8 +523,9 @@ h3{
 }
 
 .footer a:hover{
-    color: #72A1B8;
+    color: black;
 } 
+*/
 
 .resume-container{
     display: grid;
@@ -613,11 +595,6 @@ h3{
         align-content: space-evenly; 
     }
 
-    .footer-container{
-        display: grid;
-        margin: 30px auto 0 auto;
-    }
-
     .about-image{
         width:100%;
         height: auto;
@@ -657,18 +634,21 @@ h3{
         margin-bottom: 0px;
     }
 
+    p{
+        font-size: 15px;
+        line-height: 21px;
+    }
+
 
     h4{
-        font-weight: 400;
-        font-size: 19px;
+        font-size: 18px;
         line-height: 43px;
         font-style: normal;
         margin-bottom:0px;
     }
 
     h5{
-        font-weight: 400;
-        font-size: 16px;
+        font-size: 17px;
         line-height: 25px;
         font-style: normal;
         margin-bottom:0px;
@@ -699,10 +679,6 @@ h3{
     .hero{
         height: 69vh;
         object-fit: cover;
+        width: 93%;
     }
-
-    .footer-container{
-        margin: 30px auto;
-    }
-}
-
+  }

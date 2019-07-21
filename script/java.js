@@ -12,7 +12,7 @@ $(document).ready(function(){
   $('.card').tilt({
     maxTilt:0,
     transition:true,
-    speed: 500,
+    speed: 200,
     glare:true,
     maxGlare:.2,
     scale:1.02
@@ -20,7 +20,7 @@ $(document).ready(function(){
 
   $('.masonry-image').tilt({
     maxTilt:0,
-    speed: 500,
+    speed: 200,
     scale:1.01
   })
   
