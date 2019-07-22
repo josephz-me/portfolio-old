@@ -432,17 +432,6 @@ h3{
     object-fit: cover;
 }
 
-.card{
-    transform-style: preserve-3d;
-    transition: all .2s ease-in-out;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transform: scale(1.00);
-    -webkit-transform: scale(1.00);
-    -moz-transform: scale(1.00);
-}
-
-
 .card-text{
     position: absolute;
     bottom: 20px;
@@ -452,7 +441,6 @@ h3{
     visibility: hidden;
     transition: opacity .6s, visibility .6s;
     opacity: 0;
-    transform: translateZ(20px);  
     mix-blend-mode: difference;
 }
 
@@ -521,14 +509,14 @@ h3{
     justify-content: flex-end;
 }
 
-   #return-to-top {
-        -webkit-transition: all 0.3s linear;
-        -moz-transition: all 0.3s ease;
-        -ms-transition: all 0.3s ease;
-        -o-transition: all 0.3s ease;
-        transition: all 0.3s ease;
-    }
-    
+#return-to-top {
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
 
 /*--------------RESPONSIVE--------------*/
 
