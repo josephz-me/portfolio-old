@@ -510,6 +510,10 @@ h3{
     justify-content: start;
 }
 
+.resume a{
+    color:#707171;
+}
+
 .backup-container{
     display: grid;
     justify-content: flex-end;
