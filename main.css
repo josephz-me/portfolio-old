@@ -38,7 +38,7 @@ body.fade {
 }
 
 .wrapper{
-    width: 96%;
+    width: 86%;
 }
 
 html {
@@ -186,7 +186,7 @@ p{
 }
 
 .caption{
-    width: 85%;
+    width: 86%;
     margin: 0 auto;
     text-align: center;
     margin-top: 20px;
@@ -288,7 +288,7 @@ p{
 .hero{
     display:block;
     margin: 0 auto;
-    width: 96%; 
+    width: 86%; 
     height: auto;
     object-fit: cover;
     z-index: -1;
@@ -299,7 +299,7 @@ p{
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px; 
-    width: 85%;
+    width: 86%;
 }
 
 .left{
@@ -331,7 +331,7 @@ h3{
 
 .image-container{
     display: grid;
-    width:85%;
+    width:86%;
     margin: 117px auto 0 auto;
 }
 
@@ -384,7 +384,7 @@ h3{
 /*--------------PHOTOGRAPHY--------------*/
 .masonry-container{
     display:grid;
-    width:85%;
+    width:86%;
     justify-content: center;
     margin: 117px auto 0 auto;
 }
@@ -540,7 +540,7 @@ h3{
         margin: 0 auto;
         display:block;
         grid-template-columns:1fr;
-        width: 85%;
+        width: 86%;
     }
 
     .white-container{
