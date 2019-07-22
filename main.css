@@ -114,11 +114,12 @@ html {
 a{
     text-decoration: none;  
     transition: 0.2s;  
-    color: inherit;
+    color: #707171;
 }
 
 a:link{
     color:#707171;
+    
 }
 a:hover{
     transition: 0.2s;
