@@ -521,6 +521,15 @@ h3{
     justify-content: flex-end;
 }
 
+   #return-to-top {
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+    
+
 /*--------------RESPONSIVE--------------*/
 
   @media only screen and (max-width: 770px) {
