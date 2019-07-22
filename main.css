@@ -112,6 +112,7 @@ html {
 }
 
 a{
+    color:#707171;
     text-decoration: none;  
     transition: 0.2s;  
 }
