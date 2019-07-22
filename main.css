@@ -117,7 +117,7 @@ a{
     color: inherit;
 }
 
-a:visited{
+a:link{
     color:#707171;
 }
 a:hover{
@@ -133,7 +133,7 @@ a:active{
     text-decoration: underline;
 }
 
-.text-wrap a:visited{
+.text-wrap a:link{
     color: #72A1B8;
 }
 
