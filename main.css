@@ -107,7 +107,7 @@ html {
   /* The navigation links inside the overlay */
   .overlay a {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 22px;
     color:#707171;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
@@ -115,7 +115,7 @@ html {
   
   /* When you mouse over the navigation links, change their color */
   .overlay a:hover, .overlay a:focus {
-    color:black;
+    color: rgb(153, 191, 211);
   }
 
   .overlay .navbar .links{
@@ -123,8 +123,8 @@ html {
   }
 
 .hamburger-container p:hover{
-    color:black;
-    animation:blinkingText 0.1s infinite;   
+    transition: 0.2s; 
+    color: rgb(153, 191, 211);
 }
 
 
@@ -140,30 +140,21 @@ html {
 
 /*--------------TEXT STYLING--------------*/
 
-@keyframes blinkingText{
-    0%{     color: #000;    }
-    100%{    color: #919090 }
-    0%{     color: #000;    }
-}
 
-a{
-    text-decoration: none;  
-    transition: 0.2s;  
-    color: #73A1B9;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
 
 a:link{
-    color:#707171;
-    
+    text-decoration: none;  
+    transition: 0.2s;  
+    color: #72A1B8;
 }
+
 a:hover{
-    transition: 0.2s;
-    animation:blinkingText 0.1s infinite;  
+    transition: 0.2s; 
+    color: rgb(77, 115, 136);
 }
 
 a:active{
-    color:#707171;
+    color: rgb(77, 115, 136);
 }
 
 .text-wrap a{
@@ -175,7 +166,7 @@ a:active{
 }
 
 .text-wrap a:hover{
-    color:#4e7187;
+    color: rgb(77, 115, 136);
 }
 
 h3 {
@@ -280,6 +271,10 @@ p{
     color:#707171;
 }
 
+.links a:hover{
+    color: #72A1B8;
+}
+
 .logo{
     display: inline;
     justify-content: start;
@@ -288,12 +283,12 @@ p{
     font-weight: 400;
 }
 
-.logo a{
-    color:#707171;  
+.logo a:hover{
+    color: #72A1B8;
 }
 
-.logo a:visited{
-    color:#444444;
+.logo a{
+    color:#707171;      
 }
 
 /*--------------INDIVIDUAL PROJECT PAGES--------------*/
@@ -535,9 +530,14 @@ h3{
     justify-content: start;
 }
 
-.resume-container a{
+.footer a{
     color:#707171;
 }
+
+.footer a:hover{
+    color: #72A1B8;
+}
+
 
 .backup-container{
     display: grid;
