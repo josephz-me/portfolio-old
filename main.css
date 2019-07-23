@@ -376,6 +376,12 @@ h3{
     margin: 117px auto 0 auto;
 }
 
+.image-container-twenty{
+    display: grid;
+    width: 35%;
+    margin: 117px auto 0 auto;
+}
+
 .item-grid-container{
     display:grid;
     margin: 0 auto;
