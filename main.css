@@ -148,6 +148,10 @@ a:link{
     color: #72A1B8;
 }
 
+a{
+    color: #72A1B8;
+}
+
 a:hover{
     transition: 0.2s; 
     color: rgb(77, 115, 136);
