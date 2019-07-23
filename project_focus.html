@@ -7,12 +7,13 @@
         <link rel="icon" href="images/herb.png">
         <link rel = "stylesheet" href = "main.css">
         <link rel="stylesheet" href="https://use.typekit.net/srk5tly.css">
-        <script type="text/javascript" src="java.js"></script>
         <meta name = "viewport" content = "width=device-width, intitial-scale=1.0">
+        <script src="script/java.js"></script>
     </head>
-    <body>       
+    <body>
+        <svg id="fader"></svg>
         <script>
-            document.body.className = 'fade';
+            fadeInPage();
         </script>
         <div id="myNav" class="overlay">
             <!-- Button to close the overlay navigation -->
@@ -186,11 +187,6 @@
                         </div>
                     </div>
                 </div>
-                <script>
-                        document.addEventListener("DOMContentLoaded", function(e) {
-                            document.body.className = '';
-                        });
-                </script>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
                 <script src="script/java.js"></script>
     </body>

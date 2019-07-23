@@ -8,12 +8,13 @@
         <link rel="icon" href="images/herb.png">
         <link rel = "stylesheet" href = "main.css">
         <link rel="stylesheet" href="https://use.typekit.net/srk5tly.css">
+        <script src="script/java.js"></script>
     </head>
     <body>
+        <svg id="fader"></svg>
         <script>
-            document.body.className = 'fade';
+            fadeInPage();
         </script>
-
         <div id="myNav" class="overlay">
             <!-- Button to close the overlay navigation -->
             <div class='nav-container wrapper'>
@@ -81,11 +82,6 @@
                 </div>
             </div>
         </div>
-        <script>
-            document.addEventListener("DOMContentLoaded", function(e) {
-                document.body.className = '';
-            });
-        </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
         <script src="script/java.js"></script>
