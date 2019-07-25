@@ -281,31 +281,10 @@ p{
 }
 
 .logo a{
-    color:#707171;
+    color:#444444;
 }
 
 /*--------------INDIVIDUAL PROJECT PAGES--------------*/
-.parallax-waste{
-    background-image:url("images/project_waste/waste-masthead.jpg");
-    min-height: 570px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: 50% 35%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.parallax-newTrent{
-    background-image:url("images/project_newTrent/newTrent_masthead.jpg");
-    min-height: 570px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .spacer{
     height: 117px;
