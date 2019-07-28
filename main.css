@@ -293,7 +293,7 @@ p{
 .hero{
     display:block;
     margin: 0 auto;
-    width: 86%; 
+    width: 100%; 
     height: auto;
     object-fit: cover;
     z-index: -1;
@@ -717,6 +717,6 @@ h3{
     .hero{
         height: 69vh;
         object-fit: cover;
-        width: 93%;
+        width: 100%;
     }
   }
