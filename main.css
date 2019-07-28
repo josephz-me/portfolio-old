@@ -491,9 +491,15 @@ h3{
 
 /*--------------FOOTER--------------*/
 
-.footer-container{
+.footer-container-main{
     display: grid;
     margin: 20px auto;
+    grid-template-areas: 'resume' 'backup';
+    }
+
+.footer-container{
+    display: grid;
+    margin: 150px auto 20px auto;
     grid-template-areas: 'resume' 'backup';
     }
 
