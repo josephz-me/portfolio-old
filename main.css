@@ -630,12 +630,6 @@ h3{
         align-content: space-evenly; 
     }
 
-    .about-image{
-        width:100%;
-        height: auto;
-        margin-bottom: 30px;
-    }
-
     .about{
         display:grid;
         align-content: center;
