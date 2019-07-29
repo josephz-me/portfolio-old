@@ -262,10 +262,6 @@ p{
     grid-gap: 20px;
 }
 
-.navbar a{
-    mix-blend-mode: difference;
-}
-
 .links-container{
     display:grid;
     justify-content: end;
