@@ -260,7 +260,10 @@ p{
     display: grid;
     grid-auto-flow: column;
     grid-gap: 20px;
+}
 
+.navbar a{
+    mix-blend-mode: difference;
 }
 
 .links-container{
