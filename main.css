@@ -213,6 +213,7 @@ p{
 }
 
 .button a{
+    border-radius: 3px;
     text-align: center;
     text-decoration: none;
     color: #707171;
