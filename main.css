@@ -474,12 +474,12 @@ h3{
 
 .card{
     transition: ease .1s;
-    border-radius: 3px;
+    border-radius: 4px;
 }
 
 .main-grid-container img{
     transition: ease .1s;
-    border-radius: 3px;
+    border-radius: 4px;
 }
 
 
