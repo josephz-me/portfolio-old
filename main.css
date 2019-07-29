@@ -472,6 +472,19 @@ h3{
     mix-blend-mode: difference;
 }
 
+.card{
+    transition: ease .1s;
+    border-radius: 3px;
+}
+
+.main-grid-container img{
+    transition: ease .1s;
+    border-radius: 3px;
+}
+
+
+
+
 .card:hover .card-text{
     visibility: visible;
     opacity: 1;
