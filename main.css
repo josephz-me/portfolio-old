@@ -456,7 +456,6 @@ h3{
     grid-template-rows: repeat(4,420px);
     grid-gap: 30px; 
     transition: all .3s;
-    /* hello */
 }
 
 .main-grid-container div{
