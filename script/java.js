@@ -15,7 +15,7 @@ $(document).ready(function(){
     speed: 200,
     glare:true,
     maxGlare:.2,
-    scale:1.02
+    scale:1.01
   })
 
   $('.masonry-image').tilt({
