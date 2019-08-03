@@ -499,6 +499,10 @@ h3{
     transform: scale(1.04);
 }
 
+.card img:active{
+    transform: scale(1.00);
+}
+
 /* PROJECT COVERS */
 .item1{
     grid-column: 1 / span 2;
@@ -660,6 +664,11 @@ h3{
         grid-template-rows: repeat(6,160px);
         grid-gap: 20px 0;
     }
+
+    .card img:active{
+        transform: scale(1.00);
+    }
+
     .text-wrap{
         width:90%;
     }
