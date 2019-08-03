@@ -500,7 +500,7 @@ h3{
 }
 
 .card img:active{
-    transform: scale(1.00);
+    transform: scale(1.01);
 }
 
 /* PROJECT COVERS */
@@ -666,7 +666,7 @@ h3{
     }
 
     .card img:active{
-        transform: scale(1.00);
+        transform: scale(1.01);
     }
 
     .text-wrap{
