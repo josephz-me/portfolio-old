@@ -6,16 +6,19 @@
     border: 0;
     outline: 0;
     vertical-align: baseline;
-    box-sizing: border-box;
+
     font-family: acumin-pro, neue-haas-unica, gt america trial, sans-serif;
     font-style: normal;
-    /*z-index: 1;*/
     letter-spacing: .1px;
 
     -webkit-user-drag: none;
     -khtml-user-drag: none;
     -moz-user-drag: none;
     -o-user-drag: none; 
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -446,26 +449,18 @@ h3{
 }
 /*--------------GRID--------------*/
 
-.main-grid-container img{
-    transition: ease .1s;
-    border-radius: 4px;
-}
-
 .main-grid-container{
     margin: 0 auto;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(4,420px);
     grid-gap: 30px; 
+    transition: all .3s;
 }
 
-.main-grid-container a img{
-    width: 100%;
-    height:100%;
-    display: block;
-    object-fit: cover;
+.main-grid-container div{
+    overflow: hidden;
 }
-
 /* CARD DETAILS */
 .card-text{
     position: absolute;
@@ -487,10 +482,21 @@ h3{
 .card:hover .card-text{
     visibility: visible;
     opacity: 1;
+
 }
 
-.hover:hover{
-    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+.card img{
+    transition: ease .3s;
+    border-radius: 4px;
+    width: 100%;
+    height:100%;
+    display: block;
+    object-fit: cover;
+    transform: scale(1.00);
+}
+
+.card img:hover{
+    transform: scale(1.04);
 }
 
 /* PROJECT COVERS */
@@ -651,7 +657,7 @@ h3{
   @media only screen and (max-width: 700px) {
 
     .main-grid-container{
-        grid-template-rows: repeat(6,200px);
+        grid-template-rows: repeat(6,180px);
         grid-gap: 20px 0;
     }
     .text-wrap{

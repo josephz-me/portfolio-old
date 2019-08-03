@@ -14,16 +14,8 @@ $(document).ready(function(){
     transition:true,
     speed: 200,
     glare:true,
-    maxGlare:.2,
-    scale:1.01
+    maxGlare:.2
   })
-
-  $('.masonry-image').tilt({
-    maxTilt:0,
-    speed: 200,
-    scale:1.01
-  })
-  
 })
 
 function openNav() {
