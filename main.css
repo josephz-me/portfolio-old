@@ -215,6 +215,10 @@ p{
     font-size: 15px;
 }
 
+.button a:link{
+    color: #707171;  
+}
+
 .button a{
     border-radius: 3px;
     text-align: center;
@@ -613,6 +617,10 @@ h3{
     color:#a5a1a1;
 }
 
+.home:link{
+    color:#a5a1a1;
+}
+
 .home a:active{
     color:#444444;
 }
@@ -754,6 +762,10 @@ h3{
         display:grid;
         text-align: right;
     }
+
+    h4{
+        line-height: 70px;
+    }
   }
 
   @media only screen and (max-width: 700px) {
@@ -817,6 +829,10 @@ h3{
     }
 
     .image-container-twenty{
+        width: 90%;
+    }
+
+    .image-container-sixty{
         width: 90%;
     }
 
