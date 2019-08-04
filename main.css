@@ -613,7 +613,7 @@ h3{
 }
 
 .blurb:before {
-    content: "Felt inspired by the best, so took my first shot at web dev. Built this site with passion, humility, and an eagerness to learn. ";
+    content: "Felt inspired by the best, so took my first shot at web dev. Built this site with passion, humility, and an eagerness to learn.";
   }
 
 .blurb{
@@ -624,6 +624,10 @@ h3{
 }
 
 .blurb:hover{
+    color:#b6bbbb;
+}
+
+.blurb:active{
     color:#b6bbbb;
 }
 
@@ -673,7 +677,11 @@ h3{
     }
 
     .footer-container{
-        width: 70%;
+        width: 80%;
+    }
+
+    .footer-container-main{
+        width: 90%;
     }
 
     /* PROJECT COVERS */
@@ -751,12 +759,11 @@ h3{
     }
 
     .footer-container{
-        width: 100%;
         margin: 30px auto 10px auto; 
     }
 
     .blurb{
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .card img:active{
