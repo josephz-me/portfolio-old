@@ -277,6 +277,7 @@ p{
     margin: 0 auto;
     /* STICKINESS */
     position: sticky;
+    position:-webkit-sticky;
     top: 0px;
     z-index: 9999;
     background-color: white;
@@ -709,7 +710,7 @@ h3{
     }
 
     .header-container{
-        top: 60px;
+        top: 70px;
     }
     .card img:active{
         transform: scale(1.01);
