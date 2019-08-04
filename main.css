@@ -255,15 +255,15 @@ p{
 
 .header-container{
     display:grid;   
-    height: 80vh;
-    margin: 0px auto 30px auto;
+    height: 85vh;
+    margin: 0 auto;
     align-items: center;
-    top: 75px;
+    top: 140px;
     position: sticky;
 }
 
 .header{
-    display: inline;
+    display: inline-block;
     font-size: 40px;
     width: 70%;
     color: #444444;
@@ -490,7 +490,7 @@ h3{
     grid-template-rows: repeat(4,420px);
     grid-gap: 30px; 
     transition: all .3s;
-    opacity: 0;
+    opacity: 0.3;
 }
 
 .main-grid-container div{
@@ -631,6 +631,11 @@ h3{
         grid-gap: 30px 0px; 
     }
 
+    .header{
+        width: 100%;
+        font-size: 30px;
+    }
+
     /* PROJECT COVERS */
     .item1 , .item2, .item3, .item4, .item5, .item6 {
         grid-column-start: 1;
@@ -701,6 +706,9 @@ h3{
         grid-gap: 20px 0;
     }
 
+    .header-container{
+        top: 60px;
+    }
     .card img:active{
         transform: scale(1.01);
     }

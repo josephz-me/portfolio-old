@@ -1,17 +1,17 @@
-//var typed = new Typed('#typed',{
-//  strings: ['is a Product Designer. ^2000', 'loves ^2000 cats.' , 'loves dogs', '^1000 enjoys micro-interactions.^1000'],
-//  smartBackspace: true, // Default value
-  //backSpeed: 40,
-  //typeSpeed: 40,
-  //loop: true,
-  //loopCount:30
-//});
+// Typed.JS //
+var typed = new Typed('#typed', {
+  stringsElement: '#typed-strings',
+  smartBackspace: true, // Default value
+  typeSpeed: 50,
+  backSpeed: 70
+});
+
 
 // Header Fade //
 $(window).scroll(function(){
   $(".header-container").css("opacity", 1 - $(window).scrollTop() /270);
   $(".nav-container-main").css("opacity", 0 + $(window).scrollTop() /270);
-  $(".main-grid-container").css("opacity", 0 + $(window).scrollTop() /100);
+  $(".main-grid-container").css("opacity", 0.3 + $(window).scrollTop() /100);
 });
 
 
