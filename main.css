@@ -281,7 +281,7 @@ p{
     position:-webkit-sticky;
     top: 0px;
     z-index: 110;
-    background-color: white;
+
 }
 
 .nav-container-main{
@@ -291,7 +291,7 @@ p{
     position:-webkit-sticky;
     top: 0px;
     z-index: 110;
-    background-color: white;
+
     opacity: 0;
 }
 
@@ -573,23 +573,54 @@ h3{
 .footer-container-main{
     display: grid;
     margin: 20px auto;
-    grid-template-areas: 'resume' 'backup';
+    grid-template-columns: 1fr ;
+    width: 100%;
     }   
 
 .footer-container{
     display: grid;
-    margin: 150px auto 20px auto;
-    grid-template-areas: 'resume' 'backup';
+    margin: 100px auto 20px auto;
+    grid-template-columns: 1fr ;
+    width: 40%;
     }
 
-.footer{
-    grid-auto-flow: column;
-    display: grid;
+
+.footer-main{
+    display:block;
+    text-align: center;
     align-content: center;
-    font-size: 25px;
+    justify-content: center;
+    font-size: 22px;
     font-weight: 400;
-    margin: 0 auto;
-    z-index: 1100;
+    margin: 20px auto 20px auto;  
+    z-index: 110;
+}
+
+
+.footer{
+    display:block;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 50px auto 20px auto;  
+    z-index: 110;
+}
+
+.footer a{
+    color:#a5a1a1;
+}
+
+.blurb{
+    margin-top: 40px;
+    font-size: 14px;
+    color:#e5e7e7;
+    transition: all .2s;
+}
+
+.blurb:hover{
+    color:#b6bbbb;
 }
 
 .resume-container{
@@ -601,10 +632,6 @@ h3{
 .resume-container p:hover{
     font-size: 14px;
     color:#b6bbbb;
-}
-
-.footer a{
-    color:#707171;
 }
 
 .footer a:hover{
@@ -639,6 +666,10 @@ h3{
     .header{
         width: 100%;
         font-size: 30px;
+    }
+
+    .footer-container{
+        width: 70%;
     }
 
     /* PROJECT COVERS */
@@ -714,6 +745,11 @@ h3{
     .header-container{
         top: 70px;
     }
+
+    .footer-container{
+        width: 90%;
+    }
+
     .card img:active{
         transform: scale(1.01);
     }
