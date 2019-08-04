@@ -609,8 +609,16 @@ h3{
     z-index: 110;
 }
 
-.footer a{
+.home{
     color:#a5a1a1;
+}
+
+.home a:active{
+    color:#444444;
+}
+
+.home:hover{
+    color:#797777;
 }
 
 .home:before{
@@ -645,10 +653,6 @@ h3{
 .resume-container p:hover{
     font-size: 14px;
     color:#b6bbbb;
-}
-
-.footer a:hover{
-    color: #72A1B8;
 }
 
 
