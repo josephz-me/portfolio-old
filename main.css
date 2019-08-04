@@ -90,7 +90,7 @@ html {
     height: 100%;
     width: 0%;
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */  
+    z-index: 10000; /* Sit on top */  
     right: 0;
     top: 0;
     background-color: white;
