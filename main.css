@@ -285,6 +285,8 @@ p{
     margin: 0 auto;
     /* STICKINESS */
     position: sticky;
+    -webkit-position:sticky;
+    -moz-position:sticky;
     top: 0px;
     z-index: 9999;
     background-color: white;
