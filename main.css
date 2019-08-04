@@ -612,6 +612,10 @@ h3{
     color:#a5a1a1;
 }
 
+.blurb:before {
+    content: "Felt inspired by the best, so took my first shot at web dev. Built this site with passion, humility, and an eagerness to learn. ";
+  }
+
 .blurb{
     margin-top: 40px;
     font-size: 14px;
