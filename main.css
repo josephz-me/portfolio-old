@@ -56,7 +56,7 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 999999;
+    z-index: 100;
     pointer-events: none;
     background: white;
     animation-duration: 200ms;
@@ -90,7 +90,7 @@ html {
     height: 100%;
     width: 0%;
     position: fixed; /* Stay in place */
-    z-index: 10000; /* Sit on top */  
+    z-index: 100; /* Sit on top */  
     right: 0;
     top: 0;
     background-color: white;
@@ -261,6 +261,7 @@ p{
     top: 140px;
     position: sticky;
     position:-webkit-sticky;
+    z-index: 0;
 }
 
 .header{
@@ -279,7 +280,7 @@ p{
     position: sticky;
     position:-webkit-sticky;
     top: 0px;
-    z-index: 9999;
+    z-index: 110;
     background-color: white;
 }
 
@@ -289,7 +290,7 @@ p{
     position: sticky;
     position:-webkit-sticky;
     top: 0px;
-    z-index: 9999;
+    z-index: 110;
     background-color: white;
     opacity: 0;
 }
@@ -588,6 +589,7 @@ h3{
     font-size: 25px;
     font-weight: 400;
     margin: 0 auto;
+    z-index: 1100;
 }
 
 .resume-container{
