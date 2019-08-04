@@ -2,7 +2,7 @@
 var typed = new Typed('#typed', {
   stringsElement: '#typed-strings',
   smartBackspace: true, // Default value
-  typeSpeed: 50,
+  typeSpeed: 70,
   backSpeed: 70
 });
 
