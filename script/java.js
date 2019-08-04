@@ -7,7 +7,15 @@
   //loopCount:30
 //});
 
+// Header Fade //
+$(window).scroll(function(){
+  $(".header-container").css("opacity", 1 - $(window).scrollTop() /270);
+  $(".nav-container-main").css("opacity", 0 + $(window).scrollTop() /270);
+  $(".main-grid-container").css("opacity", 0 + $(window).scrollTop() /100);
+});
 
+
+// Tilt.js //
 $(document).ready(function(){
   $('.card').tilt({
     maxTilt:0,
@@ -18,6 +26,7 @@ $(document).ready(function(){
   })
 })
 
+// Mobile Menu Bar //
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
 }
@@ -26,6 +35,8 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 
+
+// Back Up //
 document.addEventListener("touchstart", function(){}, true);
 
 $('#return-to-top').click(function() {      // When arrow is clicked
@@ -34,6 +45,8 @@ $('#return-to-top').click(function() {      // When arrow is clicked
   }, 500);
 });
 
+
+// Page Transitions //
 function fadeInPage() {
   if (!window.AnimationEvent) {
     return;
