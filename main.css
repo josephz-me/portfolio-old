@@ -90,7 +90,7 @@ html {
     height: 100%;
     width: 0%;
     position: fixed; /* Stay in place */
-    z-index: 100; /* Sit on top */  
+    z-index: 120; /* Sit on top */  
     right: 0;
     top: 0;
     background-color: white;
@@ -747,7 +747,12 @@ h3{
     }
 
     .footer-container{
-        width: 90%;
+        width: 100%;
+        margin: 30px auto 10px auto; 
+    }
+
+    .blurb{
+        font-size: 12px;
     }
 
     .card img:active{
@@ -789,14 +794,6 @@ h3{
 
     .links{
         font-size: 22px;
-    }
-
-    .footer{
-        font-size: 22px;
-    }
-
-    .footer-container{
-        margin: 30px auto; 
     }
 
     .image-container-twenty{
