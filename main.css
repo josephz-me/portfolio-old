@@ -114,6 +114,7 @@ html {
     color:#707171;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
+    -webkit-transition: .3s;
   }
   
   /* When you mouse over the navigation links, change their color */
@@ -499,6 +500,7 @@ h3{
     grid-template-rows: repeat(4,420px);
     grid-gap: 30px; 
     transition: all .3s;
+    -webkit-transition: all .3s;
     opacity: 0.3;
 }
 
@@ -514,12 +516,14 @@ h3{
     color: white;
     visibility: hidden;
     transition: opacity .3s, visibility .3s;
+    -webkit-transition: opacity .3s, visibility .3s;
     opacity: 0;
     mix-blend-mode: difference;
 }
 
 .card{
     transition: ease .1s;
+    -webkit-transition: ease .1s;
     border-radius: 4px;
 }
 
@@ -643,6 +647,7 @@ h3{
     font-size: 14px;
     color:#e5e7e7;
     transition: all .2s;
+    -webkit-transition: all .2s;
 }
 
 .blurb:hover{
@@ -657,6 +662,7 @@ h3{
     display: grid;
     justify-content: start;
     transition: .2s ease;
+    -webkit-transition: .2s ease;
 }
 
 .resume-container p:hover{
