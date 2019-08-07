@@ -198,6 +198,13 @@ p{
     font-style: normal;
 }
 
+i{
+    font-size: 20px;
+    font-style: italic;
+    color: #72A1B8;
+    margin:15px 0px 15px 20px;
+}
+
 .bio-links{
     text-align: left;
     color: #4e7187;
