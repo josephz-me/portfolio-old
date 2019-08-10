@@ -7,7 +7,7 @@
     outline: 0;
     vertical-align: baseline;
 
-    font-family: acumin-pro, neue-haas-unica, gt america trial, sans-serif;
+    font-family: acumin-pro, neue-haas-unica, sans-serif;
     font-style: normal;
     letter-spacing: 0.1px;
 
@@ -520,7 +520,7 @@ h3{
     bottom: 20px;
     left: 25px;
     font-size: 30px;
-    color: white;
+    color: white    ;
     visibility: hidden;
     transition: opacity .3s, visibility .3s;
     -webkit-transition: opacity .3s, visibility .3s;
@@ -646,7 +646,7 @@ h3{
 }
 
 .blurb:before {
-    content: "This is my first site :) built with humility and an eagerness to learn."; 
+    content: "Learned how to code cause I'm cheap and couldn't afford Squarespace."; 
   }
 
 .blurb{

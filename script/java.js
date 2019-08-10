@@ -7,7 +7,6 @@ var typed = new Typed('#typed', {
 
 });
 
-
 // Header Fade //
 $(window).scroll(function(){
   $(".header-container").css("opacity", 1 - $(window).scrollTop() /270);
