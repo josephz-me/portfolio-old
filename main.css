@@ -7,7 +7,7 @@
     outline: 0;
     vertical-align: baseline;
 
-    font-family: acumin-pro, neue-haas-unica, sans-serif;
+    font-family: acumin-pro, sans-serif;
     font-style: normal;
     letter-spacing: 0.1px;
 
@@ -203,6 +203,19 @@ i{
     font-style: italic;
     color: #72A1B8;
     margin:15px 0px 15px 20px;
+}
+
+em{
+    color: #72A1B8;
+    transition: .2s ease;
+}
+
+em:hover{
+    color:#444444;
+}
+
+em:active{
+    color:#444444;
 }
 
 .bio-links{
