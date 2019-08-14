@@ -184,7 +184,7 @@ h5{
     color:#444444;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 25px;
     margin-bottom:10px;
     font-style: normal;
@@ -206,12 +206,14 @@ i{
 }
 
 em{
-    color: #72A1B8;
-    transition: .2s ease;
+    color:#444444;
+    background-color: rgb(224, 235, 241);
+    transition: .1s ease;
 }
 
 em:hover{
-    color:#444444;
+    color: #72A1B8;
+    background-color: rgb(224, 235, 241,0);
 }
 
 em:active{
@@ -234,7 +236,7 @@ em:active{
     text-align: center;
     margin-top: 20px;
     color: #b3b3b3;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .button a:link{
@@ -883,26 +885,28 @@ h3{
         margin-bottom: 0px;
     }
 
-    p{
-        font-size: 15px;
-        line-height: 21px;
-    }
-
-
     h4{
         font-size: 18px;
-        line-height: 43px;
+        line-height: 60px;
         font-style: normal;
         margin-bottom:0px;
     }
 
     h5{
-        font-size: 17px;
-        line-height: 25px;
+        font-size: 15px;
+        line-height: 50px;
         font-style: normal;
         margin-bottom:0px;
     }
-    
+
+    p{
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .caption{
+        font-size: 15px;
+    }
 
     .hero{
         height: 69vh;
