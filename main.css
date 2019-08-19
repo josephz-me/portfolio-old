@@ -295,7 +295,7 @@ em:active{
 .header{
     display: inline-block;
     font-size: 40px;
-    width: 70%;
+    width: 80%;
     color: #444444;
 }
 
@@ -613,7 +613,7 @@ h3{
     display: grid;
     margin: 100px auto 20px auto;
     grid-template-columns: 1fr ;
-    width: 40%;
+    width: 500px;
     }
 
 
@@ -661,7 +661,7 @@ h3{
 }
 
 .blurb:before {
-    content: "Squarespace was too expensive so I learned how to code."
+    content: "Where's the fun with Sqaurespace templates? Crafted this site with an eagerness to learn something new."
   }
 
 .blurb{
