@@ -295,7 +295,7 @@ em:active{
 .header{
     display: inline-block;
     font-size: 40px;
-    width: 80%;
+    width: 70%;
     color: #444444;
 }
 
@@ -661,7 +661,7 @@ h3{
 }
 
 .blurb:before {
-    content: "Where's the fun with Sqaurespace templates? Built this site with curiosity and the desire to learn something new."
+    content: "Built this site with an eagerness to learn (and save money)."; 
   }
 
 .blurb{
