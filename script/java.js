@@ -9,7 +9,7 @@ var typed = new Typed('#typed', {
 
 // Header Fade //
 $(window).scroll(function(){
-  $(".header-container").css("opacity", 1 - $(window).scrollTop() /270);
+  $(".header-container").css("opacity", 1 - $(window).scrollTop() /220);
   $(".nav-container-main").css("opacity", 0 + $(window).scrollTop() /270);
   $(".main-grid-container").css("opacity", 0.3 + $(window).scrollTop() /100);
 });

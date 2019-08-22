@@ -295,7 +295,7 @@ em:active{
 .header{
     display: inline-block;
     font-size: 40px;
-    width: 70%;
+    width: 790px;
     color: #444444;
 }
 
@@ -611,9 +611,8 @@ h3{
 
 .footer-container{
     display: grid;
-    margin: 100px auto 20px auto;
-    grid-template-columns: 1fr ;
-    width: 500px;
+    margin: 100px auto 15px auto;
+    grid-template-columns: 90%;
     }
 
 
@@ -661,7 +660,7 @@ h3{
 }
 
 .blurb:before {
-    content: "Built this site with an eagerness to learn (and save money)."; 
+    content: "On that college-student budget so Squarespace isn't an option hahahahaha."; 
   }
 
 .blurb{
