@@ -664,19 +664,20 @@ h3{
 }
 
 .blurb:before {
-    content: "Built this site with a college student budget – Thank you, Google Search Bar."; 
+    content: "Built this site with a college-student budget. 🤑 "; 
   }
 
 .blurb{
     margin-top: 40px;
     font-size: 14px;
-    color:#e5e7e7;
+    color:black;
+    opacity:.25;
     transition: all .2s;
     -webkit-transition: all .2s;
 }
 
 .blurb:hover{
-    color:#b6bbbb;
+    opacity:.6;
 }
 
 .blurb:active{
