@@ -681,7 +681,7 @@ h3{
 }
 
 .blurb:active{
-    color:#b6bbbb;
+    opacity:.6;
 }
 
 .resume-container{  
