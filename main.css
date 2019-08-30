@@ -193,7 +193,7 @@ h5{
 p{
     color:#707171;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 16   px;
     line-height: 26px;
     font-style: normal;
 }
@@ -615,8 +615,8 @@ h3{
 .footer-container{
     display: grid;
     margin: 100px auto 15px auto;
-    grid-template-columns: 90%;
-    width: 100%
+    grid-template-columns: 1fr;
+    width: 90%;
     }
 
 
