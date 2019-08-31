@@ -28,8 +28,6 @@ html{
 }
 
 body {
-    margin: 0 auto;
-    max-width: 1800px;
     opacity: 1;
     transition: 0.7s opacity;
     -webkit-transition: 0.7s opacity;
