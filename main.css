@@ -532,6 +532,7 @@ h3{
 .main-grid-container div{
     overflow: hidden;
 }
+
 /* CARD DETAILS */
 .card-text{
     position: absolute;
@@ -548,19 +549,17 @@ h3{
 
 .card{
     transition: ease .1s;
-    -webkit-transition: ease .1s;
     border-radius: 4px;
+    transform: scale(1.00);
 }
 
 .card:hover .card-text{
     visibility: visible;
     opacity: 1;
-
 }
 
 .card img{
     transition: ease .3s;
-    -webkit-transition: ease .3s;
     border-radius: 4px;
     width: 100%;
     height:100%;
@@ -570,7 +569,7 @@ h3{
 }
 
 .card:hover img{
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .card:active img{
@@ -763,6 +762,7 @@ h3{
         padding: 70px 0;
         background-color:#F9F9F9;
     }
+
 
     .right{
         display: grid;
