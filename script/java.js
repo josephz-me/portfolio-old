@@ -15,16 +15,16 @@ $(window).scroll(function(){
 });
 
 
-// Tilt.js //
-$(document).ready(function(){
-  $('.card').tilt({
-    maxTilt:0,
-    transition:true,
-    speed: 200,
-    glare:true,
-    maxGlare:.2
-  })
-})
+// // Tilt.js //
+// $(document).ready(function(){
+//   $('.card').tilt({
+//     maxTilt:0,
+//     transition:true,
+//     speed: 500,
+//     glare:true,
+//     maxGlare:.2
+//   })
+// })
 
 // Mobile Menu Bar //
 function openNav() {

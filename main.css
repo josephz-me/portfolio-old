@@ -548,7 +548,8 @@ h3{
 }
 
 .card{
-    transition: ease .1s;
+    transition: all .2s;
+    -webkit-transition: all .2s;
     border-radius: 4px;
     transform: scale(1.00);
 }
@@ -559,7 +560,8 @@ h3{
 }
 
 .card img{
-    transition: ease .3s;
+    transition: all .4s;
+    -webkit-transition: all .4s;
     border-radius: 4px;
     width: 100%;
     height:100%;
@@ -568,12 +570,21 @@ h3{
     transform: scale(1.00);
 }
 
-.card:hover img{
-    transform: scale(1.03);
+.card img:hover{
+    transform: scale(1.04);
+
 }
 
-.card:active img{
+.card img:active{
     transform: scale(1.01);
+}
+
+.card:hover{
+    transform: scale(1.01);
+}
+
+.card:active{
+    transform: scale(1.00);
 }
 
 /* PROJECT COVERS */
