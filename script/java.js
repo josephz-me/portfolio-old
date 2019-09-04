@@ -14,18 +14,6 @@ $(window).scroll(function(){
   $(".main-grid-container").css("opacity", 0.3 + $(window).scrollTop() /100);
 });
 
-
-// // Tilt.js //
-// $(document).ready(function(){
-//   $('.card').tilt({
-//     maxTilt:0,
-//     transition:true,
-//     speed: 500,
-//     glare:true,
-//     maxGlare:.2
-//   })
-// })
-
 // Mobile Menu Bar //
 function openNav() {
   document.getElementById("myNav").style.width = "100%";

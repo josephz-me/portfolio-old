@@ -570,9 +570,8 @@ h3{
     transform: scale(1.00);
 }
 
-.card img:hover{
+.card:hover img{
     transform: scale(1.04);
-
 }
 
 .card img:active{
@@ -581,10 +580,12 @@ h3{
 
 .card:hover{
     transform: scale(1.01);
+    box-shadow: 0 0 30px rgb(0,0,0,.2);
 }
 
 .card:active{
     transform: scale(1.00);
+    box-shadow: 0 0 5px rgb(0,0,0,.3);
 }
 
 /* PROJECT COVERS */
