@@ -524,8 +524,6 @@ h3{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(4,420px);
     grid-gap: 30px; 
-    transition: all .3s;
-    -webkit-transition: all .3s;
     opacity: 0.3;
 }
 
@@ -580,12 +578,12 @@ h3{
 
 .card:hover{
     transform: scale(1.01);
-    box-shadow: 0 0 30px rgb(0,0,0,.2);
+    /* box-shadow: 0 0 30px rgb(0,0,0,.2); */
 }
 
 .card:active{
     transform: scale(1.00);
-    box-shadow: 0 0 5px rgb(0,0,0,.3);
+    /* box-shadow: 0 0 5px rgb(0,0,0,.3); */
 }
 
 /* PROJECT COVERS */
