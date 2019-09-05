@@ -4,7 +4,6 @@ var typed = new Typed('#typed', {
   smartBackspace: true, // Default value
   typeSpeed: 70,
   backSpeed: 70,
-
 });
 
 // Header Fade //
