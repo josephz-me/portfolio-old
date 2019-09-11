@@ -6,12 +6,14 @@ var typed = new Typed('#typed', {
   backSpeed: 70,
 });
 
+
 // Header Fade //
 $(window).scroll(function(){
   $(".header-container").css("opacity", 1 - $(window).scrollTop() /220);
   $(".nav-container-main").css("opacity", 0 + $(window).scrollTop() /270);
   $(".main-grid-container").css("opacity", 0.3 + $(window).scrollTop() /100);
 });
+
 
 // Mobile Menu Bar //
 function openNav() {
@@ -21,17 +23,6 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
-
-
-// Back Up //
-document.addEventListener("touchstart", function(){}, true);
-
-$('#return-to-top').click(function() {      // When arrow is clicked
-  $('body,html').animate({
-      scrollTop : 0                       // Scroll to top of body
-  }, 500);
-});
-
 
 // Page Transitions //
 function fadeInPage() {
