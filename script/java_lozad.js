@@ -4,6 +4,7 @@ lozad('.lozad', {
       el.src = el.dataset.src;
       el.onload = function() {
           el.classList.add('fade')
+          this.style.willChange = 'opacity';
       }
   }
 }).observe()

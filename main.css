@@ -23,6 +23,7 @@
 }
 
 .fade {
+    will-change: opacity;
     animation-name: fade;
     animation-duration: 1s;
   }
@@ -566,6 +567,7 @@ h3{
     transition: all .2s;
     -webkit-transition: all .2s;
     border-radius: 4px;
+    will-change:transform;
     transform: scale(1.00);
     z-index:9999;
 }
@@ -582,6 +584,7 @@ h3{
     height:100%;
     display: block;
     object-fit: cover;
+    will-change:transform;
     transform: scale(1.00);
     z-index: 0;
 }
