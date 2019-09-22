@@ -262,9 +262,8 @@ em:active{
 }
 
 .button a:hover{
-    border: 1px solid #444444;
-    background-color: #444444;
-    color: white;
+    border: 1px solid #72A1B8;
+    color: #72A1B8;
 }
 
 /*--------------HAMBURGER--------------*/
