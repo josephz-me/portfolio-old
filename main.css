@@ -543,7 +543,7 @@ h3{
     -webkit-transition: opacity .3s, visibility .3s;
     opacity: 0;
     mix-blend-mode: difference;
-}
+}       
 
 .main-grid-container div{
     overflow: hidden;
