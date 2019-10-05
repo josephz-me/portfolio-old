@@ -538,7 +538,6 @@ h3{
     transform: translateX(25px);
     font-size: 30px;
     color: white;
-    visibility: hidden;
     transition: opacity .3s, visibility .3s;
     -webkit-transition: opacity .3s, visibility .3s;
     opacity: 0;
@@ -868,9 +867,11 @@ h3{
         height: 50px;
     }
 
-    .card-text{
+    .card:hover .card-text{
+        visibility: visible;
         opacity: 0;
     }
+    
     .logo{
         font-size: 22px;
     }
