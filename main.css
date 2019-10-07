@@ -537,7 +537,7 @@ h3{
 
 
 .item2{
-    grid-column-start:3;
+    grid-column-start: 3;
 }
 
 .item3{
@@ -685,7 +685,7 @@ h3{
 }
 
 .blurb:before {
-    content: "Site designed and built by Joseph Z. 🌿"; 
+    content: "Site designed and built by Joseph 🌿"; 
   }
 
 .blurb{
