@@ -552,10 +552,6 @@ h3{
     grid-column: 2/span 2;
 }
 
-.item6{
-    grid-column: 1/span 3;
-}
-
 /* .item6{
     grid-column: 1 / span 3;
 } */
@@ -742,7 +738,8 @@ h3{
 
     .main-grid-container{
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6,400px);
+        /* CHANGE THIS WHEN ADDING PROJECTS */
+        grid-template-rows: repeat(5,400px);
         grid-gap: 30px 0px;
     }
 
@@ -830,7 +827,7 @@ h3{
   @media only screen and (max-width: 700px) {
 
     .main-grid-container{
-        grid-template-rows: repeat(6,160px);
+        grid-template-rows: repeat(5,160px);
         grid-gap: 20px 0;
     }
 
