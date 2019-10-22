@@ -82,7 +82,7 @@
 
                 <div class='gray-container'>
                     <div class='text-wrap'>
-                        <h4 class='left'>01 / Overview</h4>
+                        <h4 class='left'>Overview</h4>
                         <div class='right'>
                             <p>This summer, I was given the opportunity to join Elevation Church's Digital Team and collaborate with a diverse team of designers, developers, and data analysts. Throughout my 3 months in North Carolina, <em>I embarked on various projects such as researching, prototyping, and creating the initial vision for Elevation's Apple tvOS app, as well as relaunching Elevation Connection Center, a digital platform for people to get connected through small groups, volunteering, and baptisms.</em> Every week, I also gained insight and personal development teachings by leaders from Elevation's various departments (production, finance, creative, etc).</p><br>
 
@@ -110,10 +110,12 @@
                 <div class='white-container' id='cc'>
                     <div class='text-wrap'>
                         <div class='left'>
-                            <h4>02 / Elevation Connection Center</h4>
+                            <h4>01 / Elevation Connection Center</h4>
                         </div>
                         <div class='right'>
-                            <p>Elevation Connection Center (CC) is a digital platform for people to get connected with the Elevation community through joining/leading small groups (eGroups), volunteering (eTeams), and Baptisms. As a design team we deconstructed and rebuilt the existing Elevation CC into a platform that better encouraged people to take their next steps of engagement and relational investment.</p><br><br>
+                            <p>Elevation Connection Center (CC) is a digital platform for people to get connected with the Elevation community through joining/leading small groups (eGroups), volunteering (eTeams), and Baptisms. 
+                                
+                            <br>As a design team we deconstructed and redesigned the existing Elevation CC into a platform that better encouraged people to take their next steps of engagement and relational investment.</p><br><br>
                         </div>
                     </div>
 
@@ -121,49 +123,82 @@
                     <img class='image-container-sixty' src="images/project_elevation/cc_mockup.jpg">
                     <div class='caption'>Elevation Connection Center 2019 Redesign</div>
                     <div class='spacer'></div>
+                </div>
 
+                <div class ='gray-container'>
                     <div class='text-wrap'>
+                        <h4>02 / Problem</h4>
                         <div class='right'>
-                            <h5>Problem</h5>
-                            <p> At the time, the <em>Connection Center failed to embody the transparency, clarity, and friendliness that Elevation Church is known for. </em> The site presented input forms in overwhelming and intimidating ways and users were asked to input large amounts of information with no suggestion of what it was going to be used for. </p>
+                            <p><em>At the time, Elevation Connection Center failed to embody the transparency, clarity, and friendliness that Elevation Church as an organization is known for.</em> The site presented input forms in overwhelming and intimidating ways and users were asked to input large amounts of information with no suggestion of what it was going to be used for. </p>
+
+                            <br><br><h5> Interviews + User Feedback</h5>
+                            <p>Before making any initial design decisions, the team wanted to get a better feel of people's impressions with the current UI. Below are some of the takeaways we got:</p><br>
+                            <i>01 / Unpolished UI is contributing to a hesitant experience.</i>
+                            <i>02 / New users are confused with Elevation's terminology</i>
+                            <i>03 / Long list of filtering options feels quite overwhelming</i>
+                            <i>04 / A lot of information is asked for and users don't know why</i>
                         </div>
                     </div>
-
                     <div class='spacer'></div>
                     <img class='image-container' src="images/project_elevation/current_cc_ui.jpg">
                     <div class='caption'>eGroups Sign Up Pages</div>
                     <div class='spacer'></div>
 
                     <div class='text-wrap'>
-                        <div class='right'>                                
-                                <h5>Goal</h5>
-                                <p> Our goal was to make the sign up process for eGroups, eTeams, and Baptism as welcoming and convenient as possible. Our big question was, <em>"From start to finish, how do we make this experience feel less like an obligation and more like an invitation?"</em></p><br><br>
-                                <h5>Unique Use Cases</h5>
+                        <div class='right'>
+                            <h5>Security Issue</h5>
+                            <p>To expedite the process for returning users, Elevation CC provides an "Is this you?" page of existing users with the similar names. The current design poses a huge security issue since it means any individual can type in someone else's name and sign them up for Baptisms, eTeams, and eGroups.</p>
+                        </div>
+                    </div>
+                    <img class='image-container-sixty' src="images/project_elevation/problem_security.jpg">
+                    <div class='caption'>Problem: any individual can signup someone else + see their DoB</div>
+
+                    <div class='spacer'></div>
+                    <div class='text-wrap'>
+                        <div class='right'>
+                            <h5>Inefficient signup through Tent Kiosks</h5>
+                            <p>A common way new church members get integrated with Elevation is through digital kiosk tablets at Welcome Tents after Worship Experiences on Wednesdays, Saturdays, and Sundays. <em>With over 400 people in attendance at any of Elevation's 18 locations, the existing Elevation CC process takes too long at Welcome Tents, which often have to deal with long lines of people.</em></p>
+                        </div>
+                    </div>
+                    <div class='spacer'></div>
+                    <img class='image-container' src="images/project_elevation/welcome_tent.jpg">
+                    <div class='caption'>Welcome Tents after bi/tri-weekly Worship Experiences</div>
+                </div>
+
+                <div class ='white-container'>
+                    <div class='text-wrap'>
+                        <h4>02 / Solution</h4>
+                        <div class='right'>
+                            <h5>Goal</h5>
+                            <p> Our goal was to make the sign up process for eGroups, eTeams, and Baptism as welcoming and convenient as possible. <em>Our big question was, "From start to finish, how do we make this experience feel less like an obligation and more like an invitation?"</em></p>
+                            
+                            <br><p>Our solution comprised of four points of emphasis:</p>
+                            <br><i>01 / Complete visual design overhaul</i>
+                            <i>02 / Addressing user-profile security issues</i>
+                            <i>03 / Identifying returning users from new users</i>
+                            <i>04 / Expediting the sign-up process (online & welcome tents)</i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class ='gray-container'>
+                    <div class='text-wrap'>
+                        <h4>03 / User Categorization + Flows</h4>
+                        <div class='right'>                                                                
                                 <p> Users have three primary ways to access Elevation CC: (1) People who attend Worship Experiences on Wednesday, Saturday, and Sunday can walk up to onsite tents set up for newcomers and those interested in getting involved. (2) Those browsing Elevationchurch.org can access CC through the website's subpages. (3) Finally, there are users who might be exposed to Elevationchurch.cc by a friend, which ultimately skips the explanations provided by the website and onsite church volunteers. By consciously noting the various ways that people engage with Elevation CC, <em>we realized that we needed to redesign CC so that it could somehow stand alone as its own entity and also act as a transition point from somewhere else.</em></p>
                         </div>
                     </div>
                     <div class='spacer'></div>
-                    <img class='image-container' src="images/project_elevation/use_cases.jpg">
-                    <div class='caption'>Onsite tent / Elevationchurch.org / Connection Center</div>
+                    <img class='image-container' src="images/project_elevation/user_types.jpg">
+                    <div class='caption'>Different user scenarios</div>
                     <div class='spacer'></div>
 
                     <div class='text-wrap'>
                         <div class='right'>
-                            <h5> Interviews + User Feedback</h5>
-                            <p>Before making any initial design decisions, the team wanted to get a better feel of people's impressions with the current UI. Below are some of the takeaways we got:</p><br>
-                            <i>01 / Unpolished UI is contributing towards trust issues.</i>
-                            <i>02 / New users are confused with Elevation's terminology</i>
-                            <i>03 / Long list of filtering options feels quite overwhelming</i>
-                            <i>04 / Users aren't sure of why their inputting certain information</i><br>
-                        </div>
-                    </div>
-
-
-
-                    <div class='text-wrap'>
-                        <div class='right'>
                             <h5>Current User Flow</h5>
-                            <p> To better understand the existing bone structure of Elevation CC, the team and I mapped out the user flow of each sign up process. From doing so, we realized that 80% of each process was the same. This meant that the bulk of the issues in all (eTeams, Baptisms, eGroups) came from a lack of clarity in these series of actions.
+                            <p> The current sign-up processes ask for an email and then name as verification points for returning users. However as mentioned before, both new and returning users are then often prompted to a highly problematic "Is this you?" page with a list of individuals who have similar names. 
+                                
+                            <br><br>By mapping out Elevation CC's current flow, we realized that 80% of the processes were the same for eTeams, Baptisms, and eGroups. This meant that the bulk of the issues in all three came from a lack of clarity and efficiency in these series of actions.
                             </p>    
                         </div>
                     </div>
@@ -175,20 +210,23 @@
                     <div class='text-wrap'>
                         <div class='right'>
                             <h5>Redesigned User Flow</h5>
-                            <p>Upon revaluating and digging into the existing flow, <em>we decided to implement a new sign up experience that uses a checkpoint system to help minimize the number of steps required for returning users interested in Baptisms, eTeams, and eGroups</em> <br><br>The process first asks for a phone number followed by a verification code. The request for the phone number serves both as a security caution as well as the first piece of information to look up. If there are multiple existing entries for the phone number, or if it's not found at all, the user is asked for a second piece of information and the process continues. If the invidual inputs their phone number, verifies the code, and the system finds a user match, then the process ends there and an "Is this you?" confirmation page comes up. That existing user no longer has to redundantly input his/her name, email, and address.</p>
+                            <p>Upon revaluating and digging into the existing flow, <em>we decided to implement a new sign up experience that used a start-to-end checkpoint system to help minimize the number of steps required for returning users interested in Baptisms, eTeams, and eGroups.</em></p>
                         </div>
                     </div>
 
                     <div class='spacer'></div>
                     <img class='image-container' src="images/project_elevation/revised_flow.jpg">
                     <div class='spacer'></div>
-
+                </div>
+                <div class='white-container'>
                     <div class='text-wrap'>
+                        <h4>04 / Redesigned Elevation CC</h4>
                         <div class='right'>
                             <h5>eGroups - Search by List</h5>
-                            <p>The design team redesigned these pages with the goal of bringing more personality and light-heartedness to the process. This prompted us to introduce colored navigation, leader profiles, and an expandable map interface. . .</p><br>
+                            <p>The design team redesigned these pages with the goal of bringing more personality and light-heartedness to the process. This prompted us to introduce colored navigation, leader profiles, and an expandable map interface.</p><br>
                         </div>
                     </div>
+
                     <div class='spacer'></div>
                     <img class='image-container' src="images/project_elevation/eGroups_List.jpg">
                     <div class='spacer'></div>
@@ -211,31 +249,64 @@
                     <div class='text-wrap'>
                         <div class='right'>
                             <h5>Sign Up Process</h5>
-                            <p>To avoid the problem of feeling overwhelmed, we designed the process so that users to proceed one step at a time. A big problem in the past Connection Center was the formidable sensation of seeing a page load with ten mandatory input boxes. By breaking it into steps, we were able to solve that issue as well as skip any uncessary steps for returning users.</p><br>
+                            <p>To avoid the problem of feeling overwhelmed, we designed the process so that users proceed one step at a time. A big problem in the past Connection Center was the formidable sensation of seeing a page load with ten mandatory input boxes. By breaking it into steps, we were able to solve that issue as well as skip any uncessary steps for returning users, which will be mentioned later.</p><br>
                         </div>
                     </div>
-                    
+
                     <div class='spacer'></div>
                     <img class='image-container' src="images/project_elevation/eGroups_Signup.jpg">
                     <div class='spacer'></div>
 
                     <div class='text-wrap'>
                         <div class='right'>
+                        <h5>Verification Code Text — Security Solution</h5>
+                        <p>The process first asks for a phone number followed by a verification code. The request for the phone number serves both as a security caution as well as the first piece of information to look up.</p>
+                            
+                        <br><br>
+                        <h5>Scenario 1 — Identified Phone #</h5>
+                        <p>If the invidual inputs their phone number, verifies the code, and the system finds a user match, then the process ends there and an "Is this you?" confirmation page comes up. That existing user no longer has to redundantly input his/her name, email, and address.</p>
+                        </div>
+                    </div>
+
+                    <div class='spacer'></div>
+                    <img class='image-container-sixty' src="images/project_elevation/security_process1_chart.jpg">
+                    <div class='spacer'></div>
+                    <img class='image-container' src="images/project_elevation/security_process1.jpg">
+                    <div class='caption'>Unique phone number is identified and user skips to end of process</div>
+                    <div class='spacer'></div>
+
+                    <div class='text-wrap'>
+                        <div class='right'>
+                            <h5>Scenario 2 — Unidentified Phone # or Multiple Entries</h5>
+                            <p> If there are multiple existing entries for the phone number, or if it's not found at all, the user is asked for a second piece of information and the process continues.</p>
+                        </div>
+                    </div>   
+                    <div class='spacer'></div>
+                    <img class='image-container-sixty' src="images/project_elevation/security_process2_chart.jpg">
+                    <div class='caption'>Phone number isn't identified ✕</div>
+                    <div class='spacer'></div>
+                    <img class='image-container' src="images/project_elevation/security_process2.jpg">
+                    <div class='caption'>Unique phone number is not identified/unique and user continues to fill information</div>
+                    <div class='spacer'></div>
+
+                    <div class='text-wrap'>
+                        <div class='right'>
                             <h5>Baptisms and eTeams</h5>
-                            <p>For those interested in joining eTeams and getting baptized, Elevation requires individuals to go through an in-person Meet & Greet. As a design team, we wanted to build a universal process that would allow the data team to easily keep track of those that participate in the church. With that goal in mind, we designed the Baptism and eTeam experience to ask for the same amount of information as the eGroups sign up process, just with the additional Meet & Greet sign up page. </p><br>
+                            <p>For those interested in joining eTeams and getting baptized, Elevation requires individuals to go through an in-person Meet & Greet. As a design team, we wanted to build a universal process that would allow the data team to easily keep track of the same data points. With that goal in mind, we designed the Baptism and eTeam experience to ask for the same pieces of information as the eGroups process, just with the Meet & Greet sign up page to replace the eGroup interactive map and list function. </p><br>
                         </div>
                     </div>
 
                     <div class='spacer'></div>
                     <img class='image-container' src="images/project_elevation/baptism_egroup_signup.jpg">
+                    <div class='caption'>Preliminary eTeams & eGroups Scheduling</div>
                     <div class='spacer'></div>
-
+                    <div class='spacer'></div>
                     <div class='text-wrap'>
                         <div class='right'>
-                            <h5>Kiosk Mode</h5>
+                            <h4 style='margin-bottom: 10px;'>Kiosk Mode</h4>
                             <p>Tackling the UI layouts for mobile allowed us to easily adapt the designs for tablet (and desktop) view. Referring back to the various use cases and possible journey maps, Kiosk Mode is solely intended to be used at an onsite Elevation location. <em>Given that large numbers of people line up after weekend Worship Experiences to get connected, our goal for Kiosk Mode was to be as efficient and distraction-free as possible.</em> After a series of one-on-one conversations and a couple team meetings, we realized we needed to:<br><br>
                                 <i>01 / Minimize UI graphic visuals</i><br><br>
-                                <i>02 / Simplify necessary sign up steps at kiosk tables.</i><br><br>
+                                <i>02 / Expedite sign up process at Welcome Tent kiosks.</i><br><br>
                                  All irrelevant UI components are removed, which includes the web app's navigation bar and page footers. </p>
                         </div>
                     </div>
@@ -246,7 +317,7 @@
 
                     <div class='text-wrap'>
                         <div class='right'>
-                            <h5>Kiosk Mode- Reenvisioned User Flow</h5>
+                            <h5>05 / Kiosk Mode- Reenvisioned User Flow</h5>
                             <p>Because Kiosk mode is all about simplification and expediting the time spent waiting in line. Upon filling selecting event/group details, the user completes the rest of the process on his or her own device.</p><br>
                         </div>
                     </div>
@@ -254,24 +325,27 @@
                     <div class='spacer'></div>
                     <img class='image-container' src="images/project_elevation/kiosk_flow.jpg">
                     <img class='image-container' src="images/project_elevation/kiosk_pages.jpg">
-                    <div class='spacer'></div>
-
-
+                </div>
+                <div class='white-container'>
                     <div class='text-wrap'>
                             <div class='right'>
-                                <h5>Final Thoughts</h5>
-                                <p>As 1 of 3 designers on the Digital Team, we handed off all designs within a one week timeframe. One of the most valuable moments from working on Elevation CC was the opportunity to sit in with developers and walk step by step through every part of the process. It was in these moments that I began to understand what it meant to work "collaboratively". Not just with fellow design students on hypothetical prototypes, but on tangible products that have a deadline to be shipped.<br><br>
-                                For future launches, the Digital team has talked about possible integrations with myElevation, Elevation Church's personal user profile platform. This would allow users to potentially leverage Connection Center and myElevation to not only plug themselves into eGroups, Baptisms, and eTeams, but also possibly connect with others in their area. Elevation Church exists so that people far from God will be raised to life in Christ and that's what we geared Elevation CC to contribute towards.</p>
+                                <h4 style='margin-bottom:10px;'>Final Thoughts</h4>
+                                <p>As 1 of 3 designers on the Digital Team, we handed off all designs within a two week timeframe. <em>
+                                One of the most valuable moments from working on Elevation CC was the opportunity to sit in with developers and walk step by step through every part of the process. </em> It was in these moments that I began to understand what it meant to work "collaboratively." Not just with fellow design students on hypothetical prototypes, but on tangible products that have a shipping deadlines.</p>
+                                <br><br><h5>Challenges</h5>
+                                <p>Elevation Church has ten values that they heavily emphasize, especially for the creative teams, and one of them is the ability to <em>Think Inside the Box</em>, which can be summarized to mean embracing limitations. During this project, I had so many ideas and app functionalities that I believed should be implemented, many of which were turned down because of our given timeframe and technical limitations. <em>Working on this project with developers and other designers really taught me how to innovate and think creatively under strict guidelines and skills.</em></p>
+                                <br><br><h5>Future Direction</h5>
+                                <p>For future launches, the Digital team has talked about potential development of an official user dashboard platform where church members would be able to view and sign up for upcoming commitments and events all in one place. Elevation Church exists so that people far from God will be raised to life in Christ and that's what we geared Elevation CC to contribute towards.</p>
                             </div>
                         </div>
-
+                    </div>
                 </div>
                 
                 <!-- APPLE tvOS APP -->
                 <div style= 'padding-bottom: 20px;' class='gray-container' id = 'tvOS'>
                     <div class='text-wrap'>
                         <div class='left'>
-                            <h4>03 / Elevation's Apple TV App</h4>
+                            <h4>03 / Elevation tvOS App</h4>
                         </div>
                         <div class='right'>
                                 <h5>[Documentation Still in Process]</h5>
