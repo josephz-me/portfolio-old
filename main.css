@@ -852,6 +852,10 @@ h3{
         transform: scale(1.01);
     }
 
+    .card:hover img{
+        opacity: 1;
+    }
+
     .text-wrap{
         width:90%;
     }
