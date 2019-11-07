@@ -580,23 +580,24 @@ h3{
     border-radius: 4px;
     will-change:transform;
     transform: scale(1.00);
+    /* background-color: black; */
     background-color: black;
-    box-shadow: 0 0 5px rgba(70, 69, 69, 0);
+    /* box-shadow: 0 0 5px rgba(70, 69, 69, 0); */
 }
 
 .card:hover img{
-    opacity: .5;
+    opacity: .3;
 }
 
 .card:hover{
     transform: scale(1.01);
-    box-shadow: 0 0 30px rgb(0,0,0,0.15);
+    /* box-shadow: 0 0 30px rgb(0,0,0,0.15); */
 }
 
 .card:active{
     border-radius: 4px;
     transform: scale(1.00);
-    box-shadow: 0 0 5px rgba(70, 69, 69, 0.3);
+    /* box-shadow: 0 0 5px rgba(70, 69, 69, 0.3); */
 }
 
 .card:hover .card-text{
@@ -843,6 +844,10 @@ h3{
         font-size: 13px;
     }
 
+    .card{
+        background-color: white;
+    }
+    
     .card img:active{
         transform: scale(1.01);
     }
