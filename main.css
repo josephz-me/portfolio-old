@@ -580,7 +580,6 @@ h3{
     border-radius: 4px;
     will-change:transform;
     transform: scale(1.00);
-    /* background-color: black; */
     background-color: black;
     /* box-shadow: 0 0 5px rgba(70, 69, 69, 0); */
 }
