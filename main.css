@@ -21,7 +21,6 @@
 
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
   
 html{
     text-rendering: optimizeLegibility;
@@ -82,6 +81,23 @@ html {
 #fader.fade-in {
     opacity: 1;
     animation-name: fade-in;
+}
+
+
+.iframe-cont {
+    position: relative;
+    overflow: hidden;
+    padding-top: 45%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 /*---------OVERLAY---------*/
@@ -194,7 +210,7 @@ h5{
 p{
     color:#707171;
     font-weight: 400;
-    font-size: 16   px;
+    font-size: 17px;
     line-height: 26px;
     font-style: normal;
 }
@@ -437,6 +453,12 @@ h3{
 .image-container-sixty{
     display: grid;
     width: 60%;
+    margin: 0 auto;
+}
+
+.image-container-fourty{
+    display: grid;
+    width: 45%;
     margin: 0 auto;
 }
 
@@ -850,6 +872,10 @@ h3{
 
   @media only screen and (max-width: 700px) {
 
+    .iframe-cont {
+        padding-top: 50%;
+    }
+
     .main-grid-container{
         grid-template-rows: repeat(6,40vw);
         grid-gap: 20px 0;
@@ -895,6 +921,11 @@ h3{
     .image-container{
         width:90%;
     }
+
+    .image-container-fourty{
+        width: 90%;
+    }
+    
 
     .white-container{
         padding: 50px 0;
