@@ -606,6 +606,10 @@ h3{
     /* box-shadow: 0 0 5px rgba(70, 69, 69, 0); */
 }
 
+.card img{
+    border-radius: 0px;
+}
+
 .card:hover img{
     opacity: .3;
 }
@@ -620,7 +624,7 @@ h3{
 }
 
 .card:active{
-    border-radius: 4px;
+    /* border-radius: 4px; */
     transform: scale(1.00);
     /* box-shadow: 0 0 5px rgba(70, 69, 69, 0.3); */
 }
