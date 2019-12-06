@@ -623,7 +623,7 @@ h3{
     -webkit-transition: all .2s;
     transform: scale(1.01);
     /* background-color: rgba(0, 0, 0, 1); */
-    box-shadow: 0 0 30px rgb(0,0,0,0.06);
+    /* box-shadow: 0 0 30px rgb(0,0,0,0.06); */
 }
 
 .card:active{
@@ -866,6 +866,9 @@ h3{
         text-align: right;
     }
 
+    h3{
+        line-height: 50px;
+    }
     h4{
         line-height: 70px;
     }
