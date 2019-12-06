@@ -589,6 +589,7 @@ h3{
     -webkit-transition: opacity .3s, visibility .3s;
     opacity: 0;
     mix-blend-mode: difference;
+    /* background-color: black; */
 }       
 
 .main-grid-container div{
@@ -602,24 +603,24 @@ h3{
     border-radius: 4px;
     will-change:transform;
     transform: scale(1.00);
-    background-color: rgba(0, 0, 0, 1);
-    /* box-shadow: 0 0 5px rgba(70, 69, 69, 0); */
+    /* background-color: rgba(0, 0, 0, 0); */
+    box-shadow: 0 0 5px rgba(70, 69, 69, 0);
 }
 
 .card:hover img{
-    opacity: .3;
+    opacity: .9;
 }
 
 .card:hover .videoThumbnail{
-    opacity: 1;
+    opacity: .9;
 }
 
 .card:hover{
-    transition: ease .2s;
-    -webkit-transition: ease .2s;
+    transition: all .2s;
+    -webkit-transition: all .2s;
     transform: scale(1.01);
-    background-color: rgba(0, 0, 0, 1);
-    /* box-shadow: 0 0 30px rgb(0,0,0,0.06); */
+    /* background-color: rgba(0, 0, 0, 1); */
+    box-shadow: 0 0 30px rgb(0,0,0,0.1);
 }
 
 .card:active{
@@ -628,10 +629,10 @@ h3{
     /* box-shadow: 0 0 5px rgba(70, 69, 69, 0.3); */
 }
 
-.card:hover .card-text{
+/* .card:hover .card-text{
     visibility: visible;
     opacity: 1;
-}
+} */
 
 .card img{
     transition: all .2s;
@@ -651,17 +652,12 @@ h3{
 
 .videoThumbnail{
     /* transform: translateY(-200px); */
-    transition: all .4s;
+    transition: all .2;
     width: 100%;
     height: 100%;
     object-fit: cover;
     position: absolute;
     /* object-fit: cover; */
-}
-
-.card:hover .videoThumbnail{
-    transform: scale(1.04);
-    opacity: .3;
 }
 
 .card img:active{
