@@ -44,7 +44,7 @@ body.fade {
 
 .wrapper{
     width: 86%;
-    max-width: 1400px;
+    max-width: 1450px;
 }
 
 
@@ -91,7 +91,7 @@ html {
     position: relative;
     overflow: hidden;
     padding-top: 45%;
-    max-width: 1400px;
+    max-width: 1450px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -411,7 +411,7 @@ em:active{
     display:block;
     margin: 0 auto;
     width: 100%; 
-    max-width: 1400px;
+    max-width: 1450px;
     height: auto;
     object-fit: cover;
     z-index: -1;
@@ -424,7 +424,7 @@ em:active{
     grid-template-columns: 1fr 1fr ;
     grid-gap: 20px; 
     width: 86%;
-    max-width: 1400px;
+    max-width: 1450px;
 }
 
 .left{
@@ -457,13 +457,13 @@ h3{
 .image-container{
     display: grid;
     width:86%;
-    max-width: 1400px;
+    max-width: 1450px;
     margin: 0 auto;
 }
 
 .image-container-ui{
     display: grid;
-    max-width: 1400px;
+    max-width: 1450px;
     color:transparent;
     width:280px;
     margin: 0 auto;
@@ -480,19 +480,19 @@ h3{
     display: grid;
     width: 60%;
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: 1450px;
 }
 
 .image-container-fourty{
     display: grid;
-    max-width: 1400px;
+    max-width: 1450px;
     width: 45%;
     margin: 0 auto;
 }
 
 .image-container-twenty{
     display: grid;
-    max-width: 1400px;
+    max-width: 1450px;
     width: 30%;
     margin: 0 auto;
 }
@@ -589,7 +589,7 @@ h3{
     }
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1450px) {
     .hero{
         border-radius: 0px;
     }
@@ -700,7 +700,7 @@ h3{
     /* transform: translateY(-200px); */
     transition: all .2;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1450px;
     height: 100%;
     object-fit: cover;
     position: absolute;
