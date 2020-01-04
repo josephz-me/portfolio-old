@@ -631,7 +631,7 @@ h3{
     transition: opacity .3s, visibility .3s;
     -webkit-transition: opacity .3s, visibility .3s;
     opacity: 0;
-    mix-blend-mode: difference;
+    /* mix-blend-mode: difference; */
     /* background-color: black; */
 }       
 
@@ -645,28 +645,30 @@ h3{
     -webkit-transition: all .2s;
     border-radius: 4px;
     will-change:transform;
-    transform: scale(1.00);
+    /* transform: scale(1.00); */
     /* background-color: rgba(0, 0, 0, 0); */
     box-shadow: 0 0 5px rgba(70, 69, 69, 0);
-}
-
-.card:hover img{
-    opacity: .9;
 }
 
 .card:hover .videoThumbnail{
     transition: all .2s;
     -webkit-transition: all .2s;
-    opacity: .9;
-    transform: scale(1.02);
+    /* opacity: .9; */
 }
 
 .card:hover{
     transition: all .2s;
     -webkit-transition: all .2s;
     transform: scale(1.01);
+    border-radius: 4px;
     /* background-color: rgba(0, 0, 0, 1); */
     /* box-shadow: 0 0 30px rgb(0,0,0,0.06); */
+}
+
+.card:hover img{
+    opacity: .9;
+    border-radius: 4px;
+    /* transform: scale(1.02); */
 }
 
 .card:active{
@@ -690,10 +692,12 @@ h3{
     will-change:transform;
     transform: scale(1.00);
     z-index: 0;
+    border-radius: 4px;
 }
 
-.card:hover img{
-    transform: scale(1.02);
+
+.card img:active{
+    transform: scale(1.01);
 }
 
 .videoThumbnail{
@@ -705,10 +709,6 @@ h3{
     object-fit: cover;
     position: absolute;
     /* object-fit: cover; */
-}
-
-.card img:active{
-    transform: scale(1.01);
 }
 
 /*--------------FOOTER--------------*/
