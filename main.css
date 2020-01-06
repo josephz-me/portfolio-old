@@ -411,6 +411,7 @@ em:active{
     display:block;
     margin: 0 auto;
     width: 100%; 
+
     max-width: 1450px;
     height: auto;
     object-fit: cover;
@@ -585,7 +586,7 @@ h3{
 
 @media only screen and (max-width: 1630px) {
     .main-grid-container{
-        grid-template-rows: repeat(4, 31vw);
+        grid-template-rows: repeat(4, 31vw);        /* CHANGE THIS WHEN ADDING PROJECTS */
     }
 }
 
@@ -618,8 +619,13 @@ h3{
 }
 
 .item6{
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 2;
 }
+
+.item7{
+    grid-column-start: 3;
+}
+
 
 /* CARD DETAILS */
 .card-text{
@@ -709,6 +715,25 @@ h3{
     object-fit: cover;
     position: absolute;
     /* object-fit: cover; */
+}
+
+.p5js {
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    border:1px solid gray;
+    border-radius: 4px;
+    /* width: 450px;
+    height: 450px; */
+}
+
+@media only screen and (max-width: 450px) {
+    .p5js{
+        max-width:320px;
+        max-height:320px;
+        width: 90%;
+        border:none;
+    }
 }
 
 /*--------------FOOTER--------------*/
@@ -825,8 +850,7 @@ h3{
 
     .main-grid-container{
         grid-template-columns: 1fr;
-        /* CHANGE THIS WHEN ADDING PROJECTS */
-        grid-template-rows: repeat(6, 42vw);
+        grid-template-rows: repeat(7, 42vw);         /* CHANGE THIS WHEN ADDING PROJECTS */
         grid-gap: 30px 0px;
     }
 
@@ -852,7 +876,7 @@ h3{
     }
 
     /* PROJECT COVERS */
-    .item1 , .item2, .item3, .item4, .item5, .item6 {
+    .item1 , .item2, .item3, .item4, .item5, .item6, .item7 {        /* CHANGE THIS WHEN ADDING PROJECTS */
         grid-column-start: 1;
     }
 
@@ -932,7 +956,7 @@ h3{
     }
 
     .main-grid-container{
-        grid-template-rows: repeat(6,40vw);
+        grid-template-rows: repeat(7,40vw);         /* CHANGE THIS WHEN ADDING PROJECTS */
         grid-gap: 20px 0;
     }
 

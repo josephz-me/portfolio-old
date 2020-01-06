@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+                <!-- Global site tag (gtag.js) - Google Analytics -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148807463-1"></script>
+                <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+        
+                gtag('config', 'UA-148807463-1');
+                </script>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width, intitial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title>Interactive Sketches</title>
+        <link rel="icon" href="images/herb.png">
+        <link rel = "stylesheet" href = "main.css">
+        <link rel="stylesheet" href="https://use.typekit.net/srk5tly.css">
+        <script src="script/java.js"></script>
+        </head>
+    <body>
+        <svg id="fader"></svg>
+        <script>
+            fadeInPage();
+        </script>
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <div class='nav-container wrapper'>
+                <div class='navbar'>
+                    <div class='links'>
+                            <a href="javascript:void(0)" onclick="closeNav()">Close</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Overlay content -->
+            <div class="overlay-content wrapper links">
+                <p>&mdash;</p>
+                <a href="about.html">About</a>
+                <a href="https://drive.google.com/file/d/1Vdz4Nm7x1KBoTJXKGmAl14KRodsHMeJJ/view" target="_blank">Resume</a>
+                <a href="photo.html">Photo</a>
+            </div>
+        </div>
+
+        <div class='nav-container'>
+            <div class="navbar wrapper">
+                <div class="logo"> <a href="index.html">Joseph</a>
+
+                        <!----<span id="typed-strings"></span>
+                        <span id='typed'></span>-->
+                </div>
+ 
+                <input type='checkbox' id="navmenu">
+                <div class="links-container">
+                    <div class="links">
+                            <a href="photo.html">Photo</a>
+                            <a href="about.html">About</a>
+                        </div>
+                </div>
+                <div for="navmenu" class='hamburger-container'>
+                        <p onclick="openNav()" class='links hamburger' href=''>Menu</p>
+                </div>
+            </div> 
+        </div>
+
+        <!------BEGIN CONTENT----->
+        <img class='hero' src='images/project_interactiveSketches/cover_interactiveSketches.jpg'>
+                <div class='white-container'>
+                    <div class='text-wrap'>
+                        <div class = 'left'><h3>Interactive Sketches</h3></div>
+                        <p>Fall 2019<br>Duration: Since Sept. 2019<br>Skills: p5.js<br>Collaborators: None<br><br>
+                        	In the past few months, I have began playing with generative art, specifically with the p5.js Javascript library. Though I began these experiments in a CS course, I've found myself rathering enjoying creating interactive art with code. This is an ongoing series of code-based explorations oriented around particle systems and parametric equations.</p>
+                    </div>
+                </div>
+                <div class='gray-container'>
+                    <div class='text-wrap'>
+                        <div class='right'>
+                            <h5>Sinusoidal Prisms</h5>
+							<p>This is a sinusoidal wave that's dependent on the center of the plane. The wave and its environment respond accordingly to the user's MOUSE POSITION, LEFT and RIGHT arrow keys, and the ENTER button. Go play around!</p>
+							<div class='button'> 
+                                <a style ='margin-right: 20px;' href='https://editor.p5js.org/jxsephz/full/9Dqxil-1P' target="_blank">Live Sketch</a>
+                            </div>
+						</div>  
+                    </div>
+					<div class='spacer'></div>
+					<video style='border-radius: 4px; box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.05);' class='image-container-twenty' muted autoplay loop playsinline>
+                        <source src="images/project_interactiveSketches/sinPrisms.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+					<!-- <iframe class = 'p5js' scrolling="no" frameborder="0" style = 'width: 450px; height: 450px;' src="https://editor.p5js.org/jxsephz/embed/9Dqxil-1P"></iframe> -->
+					<p class='caption eighty-five'>*Shaking sound grumble grumble</p>
+
+                </div>
+
+                <div class='white-container'>
+                    <div class='text-wrap'>
+                        <div class='right'>
+                            <h5>Perlin Trails</h5>
+							<p>Tackling this experiment, I was just beginning to get into the concept of Perlin Noise and how that can create organic randomness in particles.</p>
+							<div class='button'> 
+                                <a style ='margin-right: 20px;' target="_blank" href='https://editor.p5js.org/jxsephz/full/4l96ZDHa3'>Live Sketch</a>
+                            </div>
+                        </div>  
+                    </div>
+					<div class='spacer'></div>
+					<video style='border-radius: 4px; box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.05);' class='image-container-sixty' muted autoplay loop playsinline>
+                        <source src="images/project_interactiveSketches/perlinTrails.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+					<!-- <iframe class = 'p5js' scrolling = 'no' frameborder = '0' style = 'width: 450px; height: 450px;' src="https://editor.p5js.org/jxsephz/embed/4l96ZDHa3"></iframe> -->
+                    <p class='caption eighty-five'>*Bzzt</p>
+                </div>
+
+                <div class='gray-container'>
+                    <div class='text-wrap'>
+                        <div class='right'>
+                            <h5>Hypotrochoid/Astroid Curves</h5>
+							<p>This sketch was an exploration of mathematical roulettes, specifically the patterns of a Hypotrochoid and Astroid. The cursor position dictates each form's diameter, curve pattern, color, and size.</p>
+							<div class='button'> 
+                                <a style ='margin-right: 20px;' target="_blank" href='https://editor.p5js.org/jxsephz/full/odeh7IWdD'>Live Sketch</a>
+                            </div>
+                        </div>  
+                    </div>
+					<div class='spacer'></div>
+					
+					<video style='border-radius: 4px; box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.05);' class='image-container-twenty' muted autoplay loop playsinline>
+                        <source src="images/project_interactiveSketches/hypeCurve.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+					<!-- <iframe class = 'p5js' scrolling = 'no' frameborder = '0' style = 'width: 450px; height: 450px;' src="https://editor.p5js.org/jxsephz/embed/usmd6u8vV"></iframe> -->
+                    <p class='caption eighty-five'>Donuts</p>
+                </div>
+
+                <div class='white-container'>
+					<div class='text-wrap'>
+                        <div class='right'>
+                            <h5>Generative Self-portrait</h5>
+							<p>I like photography, why not build photos with text! As the frame count increases, so does the fidelity of the image. Users are also able to expedite the drawing by clicking and dragging the cursor.</p>
+							<div class='button'> 
+                                <a style ='margin-right: 20px;' target="_blank" href='https://editor.p5js.org/jxsephz/full/28ei3jGPR''>Live Sketch</a>
+                            </div>
+                        </div>  
+					</div>
+					<div class='spacer'></div>
+					<video style='border-radius: 4px; box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.05);' class='image-container-twenty' muted autoplay loop playsinline>
+                        <source src="images/project_interactiveSketches/generativePortrait.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+					<!-- <iframe class = 'p5js' scrolling = 'no' frameborder = '0' style = 'width: 450px; height: 450px;' src="https://editor.p5js.org/jxsephz/embed/28ei3jGPR"></iframe> -->
+                    <div class = 'spacer'></div>
+                    <img style = 'border-radius: 4px;' class='image-container-sixty' src="images/project_interactiveSketches/portrait_progress.png">
+                    <div class = 'caption'>Original Photo / After 30 Min.</div>
+				</div>
+				
+                <div class='gray-container'>
+					<div class='text-wrap'>
+                        <div class='right'>
+                            <h5>Abstract Clock</h5>
+							<p>Given the p5.js functions for time, I crafted an abstracted clock that visualizes the live time of whatever timezone the user is in. The time is a bit tricky to tell, but I think you'll catch on.</p>
+							<div class='button'> 
+                                <a style ='margin-right: 20px;' target="_blank" href='https://editor.p5js.org/jxsephz/full/usmd6u8vV'>Live Sketch</a>
+                            </div>
+                        </div>  
+					</div>
+					<div class='spacer'></div>
+					<video style='border-radius: 4px; box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.05);' class='image-container-twenty' muted autoplay loop playsinline>
+                        <source src="images/project_interactiveSketches/abstractClock.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+					<!-- <iframe class = 'p5js' scrolling = 'no' frameborder = '0' style = 'width: 450px; height: 450px;' src="https://editor.p5js.org/jxsephz/embed/28ei3jGPR"></iframe> -->
+                    <p class='caption eighty-five'>*Tick tock</p>
+                </div>
+			</div>
+
+
+
+                <div class="footer-container">
+                        <div class="footer wrapper">
+                                <a class='home' href="index.html"></a>
+                                <div class='blurb'></div>
+                        </div>
+                    </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="script/java.js"></script>
+    </body>
+</html>
