@@ -660,7 +660,7 @@ h3{
 }
 
 .card:hover img{
-    opacity: 1;
+    opacity: .95;
     border-radius: 4px;
     /* transform: scale(1.02); */
 }
