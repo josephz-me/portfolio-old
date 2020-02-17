@@ -694,14 +694,17 @@ h3{
 
 .videoThumbnail{
     /* transform: translateY(-200px); */
-    transition: all .2;
+    transition: all .2s;
+    -webkit-transition: all .2s;
     width: 100%;
-    max-width: 1450px;
     height: 100%;
+    display: block;
     object-fit: cover;
     will-change:transform;
-    position: absolute;
-    /* object-fit: cover; */
+    /* position: absolute; */
+    /* transform: scale(1.00); */
+    /* z-index: 0; */
+    max-width: 1450px;
 }
 
 .card-text{
