@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+
+:root {
+    --mainWidth: 86%;
+    --pSize: 18px;
+    --pColor: #808080;
+    --pWidth: 25px;
+
+    --h5Size: 25px;
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -29,6 +39,7 @@ html{
 
 body {
     vertical-align:middle;
+    background-color: white;
     opacity: 1;
     transition: 0.7s opacity;
     -webkit-transition: 0.7s opacity;
@@ -43,7 +54,7 @@ body.fade {
 }
 
 .wrapper{
-    width: 86%;
+    width: var(--mainWidth);
     max-width: 1450px;
 }
 
@@ -92,7 +103,7 @@ html {
     overflow: hidden;
     padding-top: 45%;
     max-width: 1450px;
-    left: 50%;
+    /* left: 50%; */
     transform: translateX(-50%);
 }
 
@@ -197,31 +208,27 @@ h3 {
     font-size: 22px;
 }
 
-h4{
-    color:#444444;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 22px;
-}
-
 h5{
-    color:#444444;
-    font-weight: 400;
+    color: #171717;
+    font-weight: 600;
     font-style: normal;
-    font-size: 17px;
+    font-size: var(--h5Size);
     line-height: 25px;
     margin-bottom:10px;
     font-style: normal;
 }
 
 p{
-    color:#707171;
+    color: var(--pColor);
     font-weight: 400;
-    font-size: 17px;
-    line-height: 26px;
+    font-size: var(--pSize);
+    line-height: var(--pWidth);
     font-style: normal;
 }
 
+.navmenu p{
+    color: white;
+}
 
 i{
     font-size: 20px;
@@ -305,6 +312,7 @@ em:active{
 
 .hamburger{
     display: inline-block;
+    color: white;
 }
 
 /*---------HEADER---------*/
@@ -328,6 +336,7 @@ em:active{
 }
 
 
+
 /*--------------NAV BAR--------------*/
 
 .nav-container{
@@ -337,7 +346,7 @@ em:active{
     position:-webkit-sticky;
     top: 0px;
     z-index: 110;
-
+    mix-blend-mode: difference;
 }
 
 .nav-container-main{
@@ -347,7 +356,7 @@ em:active{
     position:-webkit-sticky;
     top: 0px;
     z-index: 110;
-
+    mix-blend-mode: difference;
     opacity: 0;
 }
 
@@ -364,6 +373,7 @@ em:active{
     display:grid;
     justify-content: end;
     align-content: center;
+
 }
 
 .links{
@@ -372,14 +382,17 @@ em:active{
     grid-gap: 30px;
     font-size: 25px;
     font-weight: 400;
+
 }
 
 .links a{
-    color:#707171;
+    color:white;
+
 }
 
 .links a:hover{
     color: #72A1B8;
+
 }
 
 .logo{
@@ -388,6 +401,7 @@ em:active{
     align-content: center;
     font-size: 25px;
     font-weight: 400;
+
 }
 
 .logo a:hover{
@@ -395,24 +409,24 @@ em:active{
 }
 
 .logo a{
-    color:#444444;
+    color:white;
+
 }
 
 .logo a:link{
-    color:#444444;
+    color: white;
 }
 
 /*--------------INDIVIDUAL PROJECT PAGES--------------*/
 
 .spacer{
-    height: 117px;
+    height: 80px;
 }
 
 .hero{
     display:block;
     margin: 0 auto;
     width: 100%; 
-
     max-width: 1450px;
     height: auto;
     object-fit: cover;
@@ -423,15 +437,20 @@ em:active{
 .text-wrap{
     margin: 0 auto;
     display:grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr;
     grid-gap: 20px; 
-    width: 86%;
+    width: 50%;
     max-width: 1450px;
 }
 
 .left{
     display:grid;
-    grid-column-start: 1;
+    grid-column-start: 1 / span 3;
+}
+
+.right{
+    display:grid;
+    grid-column: 2 / span 3;
 }
 
 h3{
@@ -439,12 +458,6 @@ h3{
     line-height: 25px;
     margin-top: 0px;
     margin-bottom: 0px;
-}
-
-
-.right{
-    display:grid;
-    grid-column-start: 2;
 }
 
 .white-container{
@@ -457,14 +470,18 @@ h3{
 }
 
 .image-container{
-    display: grid;
-    width:86%;
+	display: grid;
+	margin-top: 40px;
+	margin-bottom: 40px;
+    grid-column: 2 / span 4;
+    width:80%;
     max-width: 1450px;
     margin: 0 auto;
 }
 
 .image-container-ui{
-    display: grid;
+	display: grid;
+	grid-column: 2 / span 3;
     max-width: 1450px;
     color:transparent;
     width:280px;
@@ -473,7 +490,8 @@ h3{
 }
 
 .image-container-ui source{
-    height: 150%;
+	height: 150%;
+	grid-column: 2 / span 3;
 }
 
 
@@ -482,7 +500,7 @@ h3{
     display: grid;
     width: 60%;
     margin: 0 auto;
-    max-width: 1450px;
+	max-width: 1450px;
 }
 
 .image-container-fourty{
