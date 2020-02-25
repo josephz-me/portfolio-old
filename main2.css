@@ -385,9 +385,8 @@ em:active{
 
 }
 
-.links a{
+.links-container .links a{
     color:white;
-
 }
 
 .links a:hover{
