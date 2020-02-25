@@ -173,7 +173,8 @@ html {
 a:link{
     text-decoration: none;  
     transition: 0.2s;  
-    color: #72A1B8;
+    /* color: #72A1B8; */
+    color: black;
 }
 
 a{
