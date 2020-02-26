@@ -155,7 +155,7 @@ html {
   
   /* When you mouse over the navigation links, change their color */
   .overlay a:hover, .overlay a:focus {
-    color: rgb(153, 191, 211);
+    color: white;
   }
 
   .overlay .navbar .links{
@@ -164,7 +164,7 @@ html {
 
 .hamburger-container p:hover{
     transition: 0.2s; 
-    color: rgb(153, 191, 211);
+    color: rgb(126, 126, 126);
     cursor:pointer;
 }
 
@@ -174,9 +174,9 @@ a:link{
     text-decoration: none;  
     transition: 0.2s;  
     /* color: #72A1B8; */
-    color: #72A1B8;
 }
 
+/* LINKS */
 a{
     display: inline;
     color: #72A1B8;
@@ -190,6 +190,7 @@ a:hover{
 a:active{
     color: rgb(77, 115, 136);
 }
+/* ——————— */
 
 .text-wrap a{
     text-decoration: underline;
@@ -228,8 +229,13 @@ p{
     font-style: normal;
 }
 
+/* MENU WIDE SCREEN */
 .navmenu p{
     color: white;
+}
+
+.navmenu p:hover{
+    color: rgb(126, 126, 126);
 }
 
 i{
@@ -375,7 +381,6 @@ em:active{
     display:grid;
     justify-content: end;
     align-content: center;
-
 }
 
 .links{
@@ -384,7 +389,6 @@ em:active{
     grid-gap: 30px;
     font-size: 25px;
     font-weight: 400;
-
 }
 
 .links-container .links a{
@@ -392,25 +396,25 @@ em:active{
 }
 
 .links a:hover{
-    color: #72A1B8;
+    /* color: #72A1B8;  !!!!!!!!!!! */
+    color:rgb(126, 126, 126);
 }
 
+/* JOSEPH TAG */
 .logo{
     display: inline;
     justify-content: start;
     align-content: center;
     font-size: 25px;
     font-weight: 400;
-
-}
-
-.logo a:hover{
-    color: #72A1B8;
 }
 
 .logo a{
     color:white;
+}
 
+.logo a:hover{
+    color: rgb(126, 126, 126);
 }
 
 .logo a:link{
@@ -810,6 +814,7 @@ h3{
     color:#a5a1a1;
 }
 
+/* footer */
 .home:link{
     color:#a5a1a1;
 }
