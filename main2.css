@@ -324,6 +324,8 @@ em:active{
     color: white;
 }
 
+
+
 /*---------HEADER---------*/
 
 .header-container{
@@ -390,6 +392,10 @@ em:active{
     grid-gap: 30px;
     font-size: 25px;
     font-weight: 400;
+}
+
+.links p{
+    color:white;
 }
 
 .links-container .links a{
