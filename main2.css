@@ -13,7 +13,7 @@
     --h4Size: 30px;
     --h4Weight: 500;
 
-    --h5Size: 20px;
+    --h5Size: 22px;
     --h5Weight: 500;
 
     --textWidth: 775px;
@@ -26,7 +26,7 @@
     outline: 0;
     vertical-align: baseline;
 
-    font-family: America-Regular, acumin-pro, sans-serif;
+    font-family: acumin-pro, sans-serif;
     font-style: normal;
     letter-spacing: 0.15px;
 
@@ -212,8 +212,7 @@ h4{
     font-weight: var(--h4Weight);
     font-style: normal;
     font-size: var(--h4Size);
-    /* line-height: 25px; */
-    /* margin-bottom:10px; */
+    /* margin-bottom:20px; */
 }
 
 h5{
@@ -242,10 +241,9 @@ p{
 }
 
 i{
-    font-size: 20px;
-    font-style: italic;
-    color: #72A1B8;
-    margin:15px 0px 15px 20px;
+    font-size: var(--pSize);
+    /* font-style: italic; */
+    color: rgb(126, 126, 126);
 }
 
 em{
@@ -432,11 +430,16 @@ em:active{
     clear: both;
 }
 
-.column{
+.column-three{
     float: left;
     width: 33.33%;
     /* padding-right: 20px; */
-    center-
+}
+
+.column-two:first-child{
+    float: left;
+    width: 50%;
+    padding-right: 30px;
 }
 
 .spacer{
