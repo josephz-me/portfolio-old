@@ -1,23 +1,22 @@
 @charset "UTF-8";
 
-
 :root {
     --mainWidth: 86%;
+    --maxWidth: 1450px;
     --pSize: 18px;
-    --pColor: #808080;
+    --pColor: #171717;
     --pLineHeight: 25px;
 
-    --h3Size: 40px;
+    --h3Size: 35px;
     --h3Weight: 500;
 
-    --h4Size: 35px;
+    --h4Size: 30px;
     --h4Weight: 500;
 
     --h5Size: 20px;
     --h5Weight: 500;
 
-    --textWidth: 750px;
-    --imageWidth: 80%;
+    --textWidth: 775px;
   }
 
 *{
@@ -27,7 +26,7 @@
     outline: 0;
     vertical-align: baseline;
 
-    font-family: acumin-pro, sans-serif;
+    font-family: America-Regular, acumin-pro, sans-serif;
     font-style: normal;
     letter-spacing: 0.15px;
 
@@ -107,26 +106,10 @@ html {
     animation-name: fade-in;
 }
 
-
-.iframe-cont {
-    position: relative;
-    overflow: hidden;
-    padding-top: 45%;
-    width: var(--textWidth) * 1.1;
-    /* max-width: 1450px; */
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.resp-iframe {
-    position: absolute;
-    padding-top: 50px;
-    top:0;
-    left: 0;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    border: 0;
+.embed-container {
+    margin:40px auto 0 auto;
+    width: var(--textWidth);
+    height: auto;
 }
 
 /*---------OVERLAY---------*/
@@ -229,8 +212,8 @@ h4{
     font-weight: var(--h4Weight);
     font-style: normal;
     font-size: var(--h4Size);
-    line-height: 25px;
-    margin-bottom:10px;
+    /* line-height: 25px; */
+    /* margin-bottom:10px; */
 }
 
 h5{
@@ -238,7 +221,7 @@ h5{
     font-weight: var(--h5Weight);
     font-style: normal;
     font-size: var(--h5Size);
-    line-height: 20px;
+    /* line-height: 20px; */
 }
 
 p{
@@ -443,18 +426,31 @@ em:active{
 
 /*--------------INDIVIDUAL PROJECT PAGES--------------*/
 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column{
+    float: left;
+    width: 33.33%;
+    /* padding-right: 20px; */
+    center-
+}
+
 .spacer{
     height: 70px;
 }
 
 .hero{
-    display:block;
+    display: block;
     margin: 0 auto;
     width: 100%; 
     max-width: 1450px;
-    height: auto;
-    object-fit: cover;
-    z-index: -1;
+    /* height: auto; */
+    /* object-fit: cover; */
+    /* z-index: -1; */
     border-radius: 6px;    
 } 
 
@@ -462,7 +458,7 @@ em:active{
     margin: 0 auto;
     display:grid;
     grid-template-columns: 1fr;
-    grid-gap: 20px; 
+    grid-gap: 10px; 
     width: var(--textWidth);
     max-width: 1450px;
 }
@@ -500,7 +496,7 @@ video{
     /* margin-top: 40px; */
     padding-top: 50px;
     /* width:80%; */
-    width:var(--imageWidth);
+    width:var(--textWidth);
     max-width: 1450px;
     margin: 0 auto;
 }
@@ -799,6 +795,11 @@ video{
         width: 90%;
         border:none;
     }
+
+    .column{
+        width: 100%;
+        margin-bottom: 40px;
+    }
 }
 
 /*--------------FOOTER--------------*/
@@ -914,6 +915,10 @@ video{
 
   @media only screen and (max-width: 900px) {
 
+    :root{
+        --mainWidth: 90%;
+        --textWidth: 90%;
+    }
     .main-grid-container{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 42vw);         /* CHANGE THIS WHEN ADDING PROJECTS */
@@ -922,10 +927,6 @@ video{
 
     .image-container-sixty{
         width: 90%;
-    }
-    
-    video{
-        width: 90%
     }
 
     .card-text{
@@ -958,12 +959,6 @@ video{
         -webkit-column-gap: 30px;
         -moz-column-gap: 30px;
         column-gap: 30px;
-    }
-    .text-wrap{
-        margin: 0 auto;
-        display:block;
-        grid-template-columns:1fr;
-        width: 86%;
     }
 
     .white-container{
@@ -1010,14 +1005,13 @@ video{
     h3{
         line-height: 50px;
     }
-    h4{
-        line-height: 70px;
-    }
-    
-  }
+}
 
   @media only screen and (max-width: 700px) {
 
+    :root{
+        --textWidth: 90%;
+    }
     i{
         margin-left: 0px;
     }
@@ -1058,19 +1052,7 @@ video{
         opacity: 1;
     }
 
-    .text-wrap{
-        width:90%;
-    }
-
     .wrapper{
-        width:90%;
-    }
-    
-    .image-container{
-        width:90%;
-    }
-
-    .image-container-textWidth{
         width:90%;
     }
 
@@ -1149,7 +1131,7 @@ video{
 
     h5{
         font-size: 19px;
-        line-height: 40px;
+        /* line-height: 40px; */
         font-style: normal;
         margin-bottom:0px;
     }
