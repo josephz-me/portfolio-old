@@ -915,10 +915,10 @@ em:hover{
 
   @media only screen and (max-width: 700px) {
     :root{
-        --h3Size: 28px;
-        --h4Size: 24px;
-        --h5Size: 20px;
-        --pSize: 18px;
+        --h3Size: 26px;
+        --h4Size: 22px;
+        --h5Size: 18px;
+        --pSize: 16px;
     }
 
     .button a{
