@@ -8,13 +8,13 @@
     --pLineHeight: 25px;
 
     --h3Size: 26px;
-    --h3Weight: 400;
+    --h3Weight: 500;
 
     --h4Size: 22px;
-    --h4Weight: 400;
+    --h4Weight: 500;
 
     --h5Size: 20px;
-    --h5Weight: 400;
+    --h5Weight: 500;
 }
 
   /* @font-face {
@@ -221,7 +221,7 @@ h3 {
     font-weight: var(--h3Weight);
     font-style: normal;
     font-size: var(--h3Size);
-    padding-bottom: 10px;
+    margin-bottom:10px;
 }
 
 h4{
@@ -229,7 +229,7 @@ h4{
     font-weight: var(--h3Weight);
     font-style: normal;
     font-size: var(--h4Size);
-    margin-bottom:10px;
+    margin-bottom:3px;
 }
 
 h5{
@@ -237,7 +237,7 @@ h5{
     font-weight: var(--h5Weight);
     font-style: normal;
     font-size: var(--h5Size);
-    margin-bottom:10px;
+    margin-bottom:3px;
     font-style: normal;
 }
 
@@ -335,22 +335,22 @@ em:hover{
 /*--------------NAV BAR--------------*/
 
 .nav-container{
-    margin: 0 auto;
+    margin: 0 auto !important;
     /* STICKINESS */
-    position: sticky;
-    position:-webkit-sticky;
-    top: 0px;
+    position: sticky !important;
+    position:-webkit-sticky !important;
+    top: 0px !important;
     z-index: 110;
     mix-blend-mode: difference;
 }
 
 .nav-container-main{
     display: grid;
-    margin: 0 auto;
+    margin: 0 auto !important;
     /* STICKINESS */
-    position: sticky;
-    position:-webkit-sticky;
-    top: 0px;
+    position: sticky !important;
+    position:-webkit-sticky !important;
+    top: 0px !important;
     z-index: 110;
     mix-blend-mode: difference;
     opacity: 1;
@@ -433,11 +433,6 @@ em:hover{
     grid-column-start: 1;
 }
 
-h3{
-    font-size: var(--h3Size);
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
 
 .right{
     padding-left:20px;
@@ -920,10 +915,10 @@ h3{
 
   @media only screen and (max-width: 700px) {
     :root{
-        --h3Size: 22px;
-        --h4Size: 20px;
-        --h5Size: 18px;
-        --pSize: 16px;
+        --h3Size: 28px;
+        --h4Size: 24px;
+        --h5Size: 20px;
+        --pSize: 18px;
     }
 
     .button a{
