@@ -4,17 +4,17 @@
     --mainWidth: 84%;
     --maxWidth: 1450px;
     --pSize: 18px;
-    --pColor: black;
+    --pColor: rgb(50,50,50);
     --pLineHeight: 25px;
 
     --h3Size: 26px;
-    --h3Weight: 500;
+    --h3Weight: 400;
 
     --h4Size: 22px;
-    --h4Weight: 500;
+    --h4Weight: 400;
 
     --h5Size: 20px;
-    --h5Weight: 500;
+    --h5Weight: 400;
 }
 
   /* @font-face {
@@ -159,7 +159,7 @@ html {
   }
 
   .overlay p{
-      color:white;
+      color:rgb(205,205,205);
   }
   
   /* The navigation links inside the overlay */
@@ -181,7 +181,7 @@ html {
   }
 
 .hamburger-container p{
-    color: white;
+    color: rgb(205,205,205);
 }
 .hamburger-container p:hover{
     /* transition: 0.2s;  */
@@ -195,7 +195,7 @@ html {
 
 a{
     display: inline;
-    color: black;
+    color: rgb(50,50,50);
     /* font-style: italic; */
 }
 
@@ -217,7 +217,7 @@ a:active{
 }
 
 h3 {
-    color:#000000;
+    color:rgb(50,50,50);
     font-weight: var(--h3Weight);
     font-style: normal;
     font-size: var(--h3Size);
@@ -225,7 +225,7 @@ h3 {
 }
 
 h4{
-    color:#000000;
+    color:rgb(50,50,50);
     font-weight: var(--h3Weight);
     font-style: normal;
     font-size: var(--h4Size);
@@ -233,7 +233,7 @@ h4{
 }
 
 h5{
-    color:#000000;
+    color:rgb(50,50,50);
     font-weight: var(--h5Weight);
     font-style: normal;
     font-size: var(--h5Size);
@@ -257,13 +257,13 @@ i{
 }
 
 em{
-    color:#000000;
+    color:rgb(50,50,50);
     text-decoration: underline;
     /* background-color: rgb(224, 235, 241); */
 }
 
 em:hover{
-    color:#000000;
+    color:rgb(50,50,50);
     text-decoration: none;
 }
 
@@ -283,9 +283,9 @@ em:hover{
     border-radius: 3px;
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: rgb(50,50,50);
     display: inline-block;
-    border: 1px solid black;
+    border: 1px solid rgb(50,50,50);
     padding: 15px 29px;
     font-size: var(--pSize);
     margin: 30px 0;
@@ -328,7 +328,7 @@ em:hover{
     font-size: 35px;
     margin: 0 auto;
     width: 900px;
-    color: #000000;
+    color: rgb(50,50,50);
 }
 
 
@@ -360,7 +360,7 @@ em:hover{
     padding: 20px 0 !important;
     display: grid;
     grid-auto-flow: column;
-    grid-gap: 20px;
+    grid-gap: 30px;
     margin: 0 auto;
     z-index: 999;
 }
@@ -374,7 +374,7 @@ em:hover{
 .links{
     display: grid;
     grid-auto-flow: column;
-    grid-gap: 30px;
+    grid-gap: 20px;
     font-size: 25px;
     font-weight: 400;
     mix-blend-mode: difference;
@@ -382,7 +382,7 @@ em:hover{
 
 .links a{
     font-style: normal;
-    color:white;
+    color:rgb(205,205,205);
     text-decoration: none;
 }
 
@@ -783,7 +783,7 @@ em:hover{
 }
 
 .home a:active{
-    color:#000000;
+    color:rgb(50,50,50);
 }
 
 .home:hover{
@@ -828,7 +828,7 @@ em:hover{
     .main-grid-container{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 42vw);         /* CHANGE THIS WHEN ADDING PROJECTS */
-        grid-gap: 30px 0px;
+        grid-gap: 20px 0px;
     }
 
     .right{
