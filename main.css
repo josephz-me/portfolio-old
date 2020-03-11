@@ -4,12 +4,14 @@
 
     --primaryColor: rgb(25, 25, 25);
     --primaryColorNeg: rgb(230, 230, 230);
+    --headerFonts: acumin-pro;
+    --bodyFonts: acumin-pro;
 
     --mainWidth: 84%;
     --maxWidth: 1450px;
     --pSize: 18px;
-    
     --pLineHeight: 25px;
+    --pWeight: 400;
 
     --h3Size: 26px;
     --h3Weight: 400;
@@ -32,9 +34,9 @@
     border: 0;
     outline: 0;
     vertical-align: baseline;
-    font-family: acumin-pro, Arial, sans-serif;
+    font-family: acumin-pro, sans-serif;
     font-style: normal;
-    letter-spacing: 0.15px;
+    letter-spacing: 0.1px;
 
     -webkit-user-drag: none;
     -khtml-user-drag: none;
@@ -221,6 +223,7 @@ a:active{
 }
 
 h3 {
+    font-family: var(--headerFonts);
     color:var(--primaryColor);
     font-weight: var(--h3Weight);
     font-style: normal;
@@ -229,6 +232,7 @@ h3 {
 }
 
 h4{
+    font-family: var(--headerFonts);
     color:var(--primaryColor);
     font-weight: var(--h3Weight);
     font-style: normal;
@@ -237,6 +241,7 @@ h4{
 }
 
 h5{
+    font-family: var(--headerFonts);
     color:var(--primaryColor);
     font-weight: var(--h5Weight);
     font-style: normal;
@@ -246,8 +251,9 @@ h5{
 }
 
 p{
+    font-family: var(--bodyFonts);
     color: var(--primaryColor);
-    font-weight: 400;
+    font-weight: var(--pWeight);
     font-size: var(--pSize);
     font-style: normal;
 }
