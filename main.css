@@ -950,7 +950,7 @@ em:hover{
 
     .main-grid-container{
         grid-template-rows: repeat(5,40vw);         /* CHANGE THIS WHEN ADDING PROJECTS */
-        grid-gap: 20px 0;
+        grid-gap: 17px 0;
     }
 
     .header-container{
