@@ -15,12 +15,15 @@ let firstDescription = 	"wants you to click again.";
 let descriptions = [
 	"wishes he liked seafood.",
 	"thinks he's a minimalist.",
+	"is learning 3D modeling",
 	"thinks he can code.",
 	"needs to read more.",
 	"cooks too much chicken.",
 	"thrives off the gCal app.",
 	"owns a chihuahua/lab.",
 	"is 60% extroverted.",
+	"is a photographer.",
+	"is a photographer.",
 ]
 
 
@@ -32,14 +35,14 @@ $(window).scroll(function(){
 // performs text spazzing
 let count = 0;
 function addLogoDescription() {
-	for( i = 0; i < descriptions.length; i++){
+	for( i = 0; i < 10; i++){
 		(function (i) {
 			if(i === descriptions.length - 1){
-				if (count === 0){
-					setTimeout( () => logoDescription.innerHTML = firstDescription , i * 30);
-				}
+				//first description
+				if (count === 0){ setTimeout( () => logoDescription.innerHTML = firstDescription , i * 30); }
 				else{ setTimeout( () => logoDescription.innerHTML = descriptions[Math.floor(Math.random() * descriptions.length)] , i * 30);}
 			}
+			// everything thing in between
 			else{ setTimeout( () => logoDescription.innerHTML = descriptions[i] , i * 30); }
 		})(i);
 	}
