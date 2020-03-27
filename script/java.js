@@ -15,10 +15,10 @@ let descriptions = [
 	"wants you to click again.",
 	"wishes he liked seafood.",
 	"thinks he's a minimalist.",
-	"hates holding grudges.",
+	"thinks he can code.",
 	"needs to read more.",
 	"cooks too much chicken.",
-	"is an avid procrastinator.",
+	"thrives off the gCal app.",
 	"owns a chihuahua/lab.",
 	"is 60% extroverted.",
 ]
@@ -45,37 +45,40 @@ function addLogoDescription() {
 	}
 	count++;
 }
-// if scroll is active, change 'joseph' behavior
 
-document.addEventListener('click', josephBehavior);
+
+
+let mobileWidth = window.matchMedia("(max-width: 500px)");
+if(!mobileWidth.matches && $(window).scrollTop() < 10){
+	logoName.addEventListener('click', addLogoDescription);
+}
+
+// if scroll is active, change 'joseph' behavior
 document.addEventListener('load', josephBehavior);
 document.addEventListener('scroll', josephBehavior);
 
+
 function josephBehavior(){
 	// disable text spazzing on mobile
-	console.log('active');
-	const mobileWidth = window.matchMedia("(max-width: 450px)");
-	if(!mobileWidth.matches && $(window).scrollTop() < 10){
-		logoName.addEventListener('click', addLogoDescription);	
-		document.getElementById('logo-name').style.cursor = 'help';
+	mobileWidth = window.matchMedia("(max-width: 450px)");
+	if($(window).scrollTop() < 20){
+		if(!mobileWidth.matches){
+			logoName.addEventListener('click', addLogoDescription);	
+			logoName.style.cursor = 'help';
+		}
+		logoName.removeAttribute("href");
+	}
+	else if($(window).scrollTop() > 100){
+		logoDescription.innerHTML = '';
+		logoName.style.cursor = 'n-resize';
+		logoName.href = "#top";
 	}
 	else{
-		document.getElementById('logo-name').style.cursor = 'n-resize';
-		logoDescription.innerHTML = '';
-		logoName.removeEventListener('click', addLogoDescription);	
+		logoName.style.cursor = 'n-resize';
+		logoName.href = "#top";
 	}
-
+	console.log('ran');
 }
-
-// Typed.JS //
-// var typed = new Typed('#typed', {
-//   stringsElement: '#typed-strings',
-//   smartBackspace: true, // Default value
-//   typeSpeed: 70,
-//   backSpeed: 70,
-// });
-
-
 
 // Page Transitions //
 // function fadeInPage() {
