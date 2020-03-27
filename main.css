@@ -51,6 +51,7 @@
 html{
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -402,12 +403,35 @@ em:hover{
     align-content: center;
     font-size: 25px;
     font-weight: 400;
+    color:var(--primaryColorNeg);
+    font-style: normal;
+    text-decoration: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
 }
 
 .logo a{
     color:var(--primaryColorNeg);
     font-style: normal;
     text-decoration: none;
+    cursor: pointer;
+}
+
+#logo-name:hover{
+    opacity: .5;
+    cursor: help;
+}
+#logo-name:active{
+    opacity: .7;
+}
+
+#logo-description{
+    z-index: -2000;
 }
 
 

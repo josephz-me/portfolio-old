@@ -1,6 +1,69 @@
-// $(document).ready(function(){
-//   $(this).scrollTop(0);
-// });
+// Mobile Menu Bar //
+function openNav() {
+	document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+	document.getElementById("myNav").style.width = "0%";
+}
+
+// Menu Title
+let logoName = document.getElementById('logo-name');
+let logoDescription = document.getElementById('logo-description');
+
+let descriptions = [
+	"is excited you found this!",
+	"wishes he liked seafood.",
+	"thinks he's a minimalist.",
+	"hates holding grudges.",
+	"needs to read more.",
+	"cooks too much chicken.",
+	"is an avid procrastinator.",
+	"owns a chihuahua/lab.",
+	"is 60% extroverted.",
+]
+
+
+// hide text spazzing on scroll
+$(window).scroll(function(){
+    $("#logo-description").css("opacity", 1 - $(window).scrollTop() / 100);
+  });
+
+// performs text spazzing
+let count = 0;
+function addLogoDescription() {
+	for( i = 0; i < descriptions.length; i++){
+		(function (i) {
+			if(i === descriptions.length - 1){
+				if (count === 0){
+					setTimeout( () => logoDescription.innerHTML = descriptions[0] , i * 30);
+				}
+				else{ setTimeout( () => logoDescription.innerHTML = descriptions[Math.floor(Math.random() * descriptions.length)] , i * 30);}
+			}
+			else{ setTimeout( () => logoDescription.innerHTML = descriptions[i] , i * 30); }
+		})(i);
+	}
+	count++;
+}
+
+document.addEventListener('scroll', josephBehavior);
+// if scroll is active, change 'joseph' behavior
+
+function josephBehavior(){
+	// disable text spazzing on mobile
+	const mobileWidth = window.matchMedia("(max-width: 450px)");
+
+	if(!mobileWidth.matches && $(window).scrollTop() === 0){
+		document.getElementById('logo-name').style.cursor = 'help';
+		logoName.addEventListener('click', addLogoDescription);	
+	}
+	else{
+		document.getElementById('logo-name').style.cursor = 'n-resize';
+		logoDescription.innerHTML = '';
+		logoName.removeEventListener('click', addLogoDescription);	
+	}
+
+}
 
 // Typed.JS //
 // var typed = new Typed('#typed', {
@@ -11,22 +74,6 @@
 // });
 
 
-// Header Fade //
-// $(window).scroll(function(){
-//   $(".header-container").css("opacity", 1 - $(window).scrollTop() /220);
-//   $(".nav-container-main").css("opacity", 0 + $(window).scrollTop() /270);
-//   $(".main-grid-container").css("opacity", 0.3 + $(window).scrollTop() /100);
-// });
-
-
-// Mobile Menu Bar //
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
 
 // Page Transitions //
 // function fadeInPage() {
