@@ -11,8 +11,8 @@ function closeNav() {
 let logoName = document.getElementById('logo-name');
 let logoDescription = document.getElementById('logo-description');
 
+let firstDescription = 	"wants you to click again.";
 let descriptions = [
-	"wants you to click again.",
 	"wishes he liked seafood.",
 	"thinks he's a minimalist.",
 	"thinks he can code.",
@@ -35,8 +35,8 @@ function addLogoDescription() {
 	for( i = 0; i < descriptions.length; i++){
 		(function (i) {
 			if(i === descriptions.length - 1){
-				if (count < 1){
-					setTimeout( () => logoDescription.innerHTML = descriptions[0] , i * 30);
+				if (count === 0){
+					setTimeout( () => logoDescription.innerHTML = firstDescription , i * 30);
 				}
 				else{ setTimeout( () => logoDescription.innerHTML = descriptions[Math.floor(Math.random() * descriptions.length)] , i * 30);}
 			}
