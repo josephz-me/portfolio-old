@@ -23,7 +23,7 @@ let descriptions = [
 	"owns a chihuahua/lab.",
 	"is 60% extroverted.",
 	"is a photographer.",
-	"enjoys making spreadsheets.",
+	"loves spreadsheets.",
 ]
 
 
