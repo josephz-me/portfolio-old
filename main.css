@@ -430,9 +430,11 @@ em:hover{
     opacity: .7;
 }
 
-#logo-description{
-    z-index: -2000;
-}
+@media not all and (pointer: coarse) {
+    #logo-name:hover, #logo-name:active{
+        opacity: 1;
+    }
+  }
 
 
 /*--------------INDIVIDUAL PROJECT PAGES--------------*/

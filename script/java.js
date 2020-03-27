@@ -12,7 +12,7 @@ let logoName = document.getElementById('logo-name');
 let logoDescription = document.getElementById('logo-description');
 
 let descriptions = [
-	"is excited you found this!",
+	"wants you to click again.",
 	"wishes he liked seafood.",
 	"thinks he's a minimalist.",
 	"hates holding grudges.",
@@ -35,7 +35,7 @@ function addLogoDescription() {
 	for( i = 0; i < descriptions.length; i++){
 		(function (i) {
 			if(i === descriptions.length - 1){
-				if (count === 0){
+				if (count < 1){
 					setTimeout( () => logoDescription.innerHTML = descriptions[0] , i * 30);
 				}
 				else{ setTimeout( () => logoDescription.innerHTML = descriptions[Math.floor(Math.random() * descriptions.length)] , i * 30);}
@@ -45,17 +45,19 @@ function addLogoDescription() {
 	}
 	count++;
 }
-
-document.addEventListener('scroll', josephBehavior);
 // if scroll is active, change 'joseph' behavior
+
+document.addEventListener('click', josephBehavior);
+document.addEventListener('load', josephBehavior);
+document.addEventListener('scroll', josephBehavior);
 
 function josephBehavior(){
 	// disable text spazzing on mobile
+	console.log('active');
 	const mobileWidth = window.matchMedia("(max-width: 450px)");
-
-	if(!mobileWidth.matches && $(window).scrollTop() === 0){
-		document.getElementById('logo-name').style.cursor = 'help';
+	if(!mobileWidth.matches && $(window).scrollTop() < 10){
 		logoName.addEventListener('click', addLogoDescription);	
+		document.getElementById('logo-name').style.cursor = 'help';
 	}
 	else{
 		document.getElementById('logo-name').style.cursor = 'n-resize';
