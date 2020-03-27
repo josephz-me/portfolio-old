@@ -20,10 +20,10 @@
         <script src="script/java.js"></script>
     </head>
     <body>
-        <script>
+        <!-- <script>
             fadeInPage();
-        </script>
-        <div class='nav-container '>
+        </script> -->
+        <!-- <div class='nav-container '>
             <div class="navbar wrapper">
                 <div class="logo"> <a href="index.html">Joseph</a></div>
                 <div class="links-container">
@@ -35,7 +35,45 @@
                     <a href='index.html' ><p class='links hamburger' >Back</p></a>
                 </div>
             </div> 
+        </div> -->
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <div class='nav-container wrapper'>
+                <div class='navbar'>
+                    <div class='links'>
+                            <a href="javascript:void(0)" onclick="closeNav()">Close</a>
+                    </div>
+                </div>
+            </div>
+
+                <!-- Overlay content -->
+                <div class="overlay-content wrapper links">
+                    <p>&mdash;</p>
+                    <a href="about.html">About</a>
+                    <a href="photo.html">Photo</a>
+                </div>
         </div>
+        
+                <div class='nav-container '>
+                    <div class="navbar wrapper">
+                        <div class="logo"> <a href="index.html">Joseph</a>
+        
+                                <!----<span id="typed-strings"></span>
+                                <span id='typed'></span>-->
+                        </div>
+         
+                        <input type='checkbox' id="navmenu">
+                        <div class="links-container">
+                            <div class="links">
+                                    <a href="photo.html">Photo</a>
+                                    <a href="about.html">About</a>
+                                </div>
+                        </div>
+                        <div for="navmenu" class='hamburger-container'>
+                                <p onclick="openNav()" class='links hamburger' href=''>Menu</p>
+                        </div>
+                    </div> 
+                </div>
 
 
         <div style='margin: 90px auto' class="text-wrap"> 
