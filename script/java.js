@@ -19,10 +19,11 @@ let descriptions = [
 	"thinks he can code.",
 	"needs to read more.",
 	"cooks too much chicken.",
-	"thrives off the gCal app.",
+	"lives by Google Calendar.",
 	"owns a chihuahua/lab.",
 	"is 60% extroverted.",
 	"is a photographer.",
+	"enjoys making spreadsheets.",
 ]
 
 
@@ -33,19 +34,37 @@ $(window).scroll(function(){
 
 // performs text spazzing
 let count = 0;
+let prevRandom;
+const loopLength = 10;
+
 function addLogoDescription() {
-	for( i = 0; i < 10; i++){
+	for( i = 0; i < loopLength; i++){
 		(function (i) {
-			if(i === descriptions.length - 1){
+			if(i === loopLength - 1){
 				//first description
 				if (count === 0){ setTimeout( () => logoDescription.innerHTML = firstDescription , i * 30); }
-				else{ setTimeout( () => logoDescription.innerHTML = descriptions[Math.floor(Math.random() * descriptions.length)] , i * 30);}
+				//final result
+				else{ 
+					let currRandom = Math.floor(Math.random() * descriptions.length);
+
+					if (currRandom === prevRandom){
+						currRandom = Math.floor(Math.random() * descriptions.length);
+					}
+					else{
+						console.log(`${currRandom} , ${prevRandom}`);
+						prevRandom = currRandom;
+					}
+
+					setTimeout( () => logoDescription.innerHTML = descriptions[currRandom] , i * 30);
+				}
+
 			}
 			// everything thing in between
 			else{ setTimeout( () => logoDescription.innerHTML = descriptions[i] , i * 30); }
 		})(i);
 	}
 	count++;
+	console.log(count);
 }
 
 
@@ -79,7 +98,6 @@ function josephBehavior(){
 		logoName.style.cursor = 'n-resize';
 		logoName.href = "#top";
 	}
-	console.log('ran');
 }
 
 // Page Transitions //
