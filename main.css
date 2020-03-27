@@ -430,7 +430,7 @@ em:hover{
     opacity: .7;
 }
 
-@media not all and (pointer: coarse) {
+@media (pointer: coarse) {
     #logo-name:hover, #logo-name:active{
         opacity: 1;
     }
