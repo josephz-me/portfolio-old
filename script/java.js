@@ -75,11 +75,27 @@ if(!mobileWidth.matches && $(window).scrollTop() < 10){
 }
 
 // if scroll is active, change 'joseph' behavior
-document.addEventListener('load', josephBehavior);
-document.addEventListener('scroll', josephBehavior);
+document.addEventListener('load', debounce(josephBehavior));
+document.addEventListener('scroll', debounce(josephBehavior));
 
+// debounce function
+function debounce(func, wait = 20, immediate = true) {
+	var timeout;
+	return function() {
+	  var context = this, args = arguments;
+	  var later = function() {
+		timeout = null;
+		if (!immediate) func.apply(context, args);
+	  };
+	  var callNow = immediate && !timeout;
+	  clearTimeout(timeout);
+	  timeout = setTimeout(later, wait);
+	  if (callNow) func.apply(context, args);
+	};
+  }
 
 function josephBehavior(){
+	console.log('being ran');
 	// disable text spazzing on mobile
 	mobileWidth = window.matchMedia("(max-width: 450px)");
 	if($(window).scrollTop() < 20){
