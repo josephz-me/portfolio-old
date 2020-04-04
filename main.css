@@ -4,8 +4,8 @@
 
     --primaryColor: rgb(25, 25, 25);
     --primaryColorNeg: rgb(230, 230, 230);
-    --headerFonts: acumin-pro;
-    --bodyFonts: acumin-pro;
+    --defaultFont: acumin-pro;
+    --memeFont: "Comic Sans MS";
 
     --mainWidth: 84%;
     --maxWidth: 1450px;
@@ -34,7 +34,6 @@
     border: 0;
     outline: 0;
     vertical-align: baseline;
-    font-family: acumin-pro, sans-serif;
     font-style: normal;
     letter-spacing: 0.1px;
 
@@ -52,6 +51,7 @@ html{
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
+    font-family: var(--defaultFont), sans-serif;
 }
 
 body {
@@ -81,18 +81,19 @@ html {
 }
 
 /* --------FADER-------- */
-#fader {
+/* #fader {
     position: fixed;
-    /* top: 0;
-    left: 0; */
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     z-index: 100;
     pointer-events: none;
     background: white;
+    mix-blend-mode: difference;
     animation-duration: 200ms;
     animation-timing-function: ease-in-out; 
-}
+} */
 
 @keyframes fade-out {
     from { opacity: 1 }
@@ -224,7 +225,6 @@ a:active{
 }
 
 h3 {
-    font-family: var(--headerFonts);
     color:var(--primaryColor);
     font-weight: var(--h3Weight);
     font-style: normal;
@@ -233,7 +233,6 @@ h3 {
 }
 
 h4{
-    font-family: var(--headerFonts);
     color:var(--primaryColor);
     font-weight: var(--h3Weight);
     font-style: normal;
@@ -242,7 +241,6 @@ h4{
 }
 
 h5{
-    font-family: var(--headerFonts);
     color:var(--primaryColor);
     font-weight: var(--h5Weight);
     font-style: normal;
@@ -252,7 +250,6 @@ h5{
 }
 
 p{
-    font-family: var(--bodyFonts);
     color: var(--primaryColor);
     font-weight: var(--pWeight);
     font-size: var(--pSize);
