@@ -15,7 +15,7 @@ let descriptions = [
 	"is 60% extroverted.",
 	"is a photographer.",
 	"loves spreadsheets.",
-]
+];
 
 
 // hide text spazzing on scroll
@@ -65,7 +65,7 @@ document.addEventListener('load', debounce(josephBehavior));
 document.addEventListener('scroll', debounce(josephBehavior));
 
 // debounce function
-function debounce(func, wait = 20, immediate = true) {
+function debounce(func, wait = 15, immediate = true) {
 	var timeout;
 	return function() {
 	  var context = this, args = arguments;
@@ -83,22 +83,25 @@ function debounce(func, wait = 20, immediate = true) {
 function josephBehavior(){
 	// disable text spazzing on mobile
 	mobileWidth = window.matchMedia("(max-width: 450px)");
+	// if scroll is on top
 	if($(window).scrollTop() < 20){
+		console.log('running');
 		if(!mobileWidth.matches){
 			logoName.addEventListener('click', addLogoDescription);	
 			logoName.style.cursor = 'help';
 		}
 		logoName.removeAttribute("href");
 	}
+	// if it's scrolled down
 	else if($(window).scrollTop() > 100){
 		logoDescription.innerHTML = '';
 		logoName.style.cursor = 'n-resize';
 		logoName.href = "#top";
 	}
-	else{
-		logoName.style.cursor = 'n-resize';
-		logoName.href = "#top";
-	}
+	// else{
+	// 	logoName.style.cursor = 'n-resize';
+	// 	logoName.href = "#top";
+	// }
 }
 
 // window.addEventListener('pageshow', function (event) {
