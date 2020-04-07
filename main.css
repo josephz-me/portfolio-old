@@ -592,13 +592,10 @@ em:hover{
     display: inline-block;
     margin: 0 0 30px;
     object-fit: cover;
-    transition: 1s ease all;
-    -webkit-transition:1s ease all;
-    -moz-transition:1s ease all;
 }
 
-.masonry-image img{
-    width:100%;
+.masonry-image img, video{
+    width: 100%;
     object-fit: cover;
     height: auto;
 }
@@ -618,7 +615,7 @@ em:hover{
 
 @media only screen and (max-width: 1630px) {
     .main-grid-container{
-        grid-template-rows: repeat(3, 31vw);        /* CHANGE THIS WHEN ADDING PROJECTS */
+        grid-template-rows: repeat(4, 31vw);        /* CHANGE THIS WHEN ADDING PROJECTS */
     }
 }
 
@@ -651,7 +648,7 @@ em:hover{
 }
 
 .item6{
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 3;
 }
 
 .item7{
