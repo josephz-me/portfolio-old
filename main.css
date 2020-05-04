@@ -576,7 +576,7 @@ em:hover{
     margin: 0 auto;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 500px);
+    grid-template-rows: repeat(4, 500px);
     grid-gap: 20px; 
     opacity: 1;
     z-index: 0;
@@ -624,10 +624,6 @@ em:hover{
     grid-column-start: 3;
 }
 
-.item8{
-    grid-column: 1 / span 3;
-}
-
 
 /* CARD DETAILS */
 
@@ -636,29 +632,12 @@ em:hover{
 } */
 
 .card{
-    /* position:relative; */
-    /* transition: all .2s;
-    -webkit-transition: all .2s; */
-    /* border-radius: 4px; */
     will-change:transform;
-    /* transform: scale(1.00); */
-    /* background-color: rgba(0, 0, 0, 1); */
     box-shadow: 0 0 5px rgba(70, 69, 69, 0);
 }
 
-/* .card:hover .videoThumbnail{
-    transition: all .2s;
-    -webkit-transition: all .2s;
-    opacity: .9;
-} */
-
 .card:hover{
-    /* transition: all .2s;
-    -webkit-transition: all .2s; */
     transform: scale(1.006);
-    /* border-radius: 4px; */
-    /* background-color: rgba(0, 0, 0, 1); */
-    /* box-shadow: 0 0 30px rgb(0,0,0,0.06); */
 }
 
 .card:hover img{
@@ -668,7 +647,6 @@ em:hover{
 
 .card:active{
     transform: scale(1.00);
-    /* box-shadow: 0 0 5px rgba(70, 69, 69, 0.3); */
 }
 
 .card img{
